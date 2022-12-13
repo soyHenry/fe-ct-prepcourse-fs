@@ -5,7 +5,6 @@ function sonIguales(x, y) {
    // Retorna True si "x" e "y" son iguales.
    // De lo contrario, retorna False.
    // Tu código:
-   return x === y;
 }
 
 function tienenMismaLongitud(str1, str2) {
