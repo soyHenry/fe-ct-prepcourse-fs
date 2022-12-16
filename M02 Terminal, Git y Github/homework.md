@@ -89,4 +89,4 @@ A partir de la carpeta y archivo que acabas de crear debes generar un repositori
 
 El objetivo de este ejercicio es que crees un repositorio y puedas sincronizar la carpeta "_**CarpetaHenry**_" con ese nuevo repositorio. Para lograr esto te recomendamos que sigas el siguiente video:
 
-[![Alt text](../Assets//M1Video.png)](https://www.youtube.com/watch?v=QNydgNRgGS4)
+[![Alt text](../Assets//M1Video.png)](https://rise.articulate.com/share/O0SjmUFcjx_3AXSA2lizESbHitgJIOpq#/lessons/I9cctwN3h79mfdlDPlrgxFt9e4jePcfJ)
