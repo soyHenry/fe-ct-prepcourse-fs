@@ -228,7 +228,7 @@ describe('JAVASCRIPT III', function () {
       });
    });
 
-   describe('breakStatement(num)', function () {
+   describe('EXTRA CREDIT | breakStatement(num)', function () {
       it('Debe retornar un arreglo con los elementos incrementados en dos', function () {
          expect(breakStatement(50)).toEqual([
             52, 54, 56, 58, 60, 62, 64, 66, 68, 70,
@@ -239,7 +239,7 @@ describe('JAVASCRIPT III', function () {
       });
    });
 
-   describe('continueStatement(num)', function () {
+   describe('EXTRA CREDIT | continueStatement(num)', function () {
       it('Debe retornar un arreglo con los valores resultantes de incrementarlos en 2 siempre que el número y la iteración seas diferentes a 5', function () {
          expect(continueStatement(50)).toEqual([
             52, 54, 56, 58, 60, 62, 64, 66, 68,

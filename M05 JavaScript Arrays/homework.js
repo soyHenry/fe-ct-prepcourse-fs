@@ -115,6 +115,10 @@ function mayorACien(array) {
    // Tu código:
 }
 
+/* ----------------------------------------------------------------------------------
+💪 EXTRA CREDIT EXTRA CREDIT EXTRA CREDIT EXTRA CREDIT EXTRA CREDIT  EXTRA CREDIT 💪
+-------------------------------------------------------------------------------------*/
+
 function breakStatement(num) {
    // Iterar en un bucle aumentando en 2 el número recibido hasta un límite de 10 veces.
    // Guardar cada nuevo valor en un arreglo y retornarlo.

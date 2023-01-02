@@ -47,3 +47,11 @@ En esta Homework podrás poner en práctica:
 ### **📍 HOMEWORK**
 
 En esta homework recibirás una serie de funciones que deben cumplir con las espeficicaciones. Dependiendo la función deberás utilizar métodos de arreglos y bucles.
+
+</br >
+
+### **📍 EXTRA CREDIT**
+
+Al final de esta homework encontrarás dos ejercicios **`Extra Credit`**. Estos no son obligatorios, ¡pero te desafiamos a que intentes resolverlos!
+
+⚠️ Ten en cuenta que estos dos ejercicios llevan testing. Por lo que si decides no completarlos, habrán dos test que siempre fallarán. Pero no te preocupes, porque no son obligatorios 🙂.
