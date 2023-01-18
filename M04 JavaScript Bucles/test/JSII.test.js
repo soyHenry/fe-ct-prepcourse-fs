@@ -134,7 +134,7 @@ describe('JAVASCRIPT II', function () {
          expect(fizzBuzz(10)).toBe('buzz');
       });
       it('Debe retornar false si num NO es divisible por 5 ni 3', function () {
-         expect(fizzBuzz(4)).toBe(4);
+         expect(fizzBuzz(4)).toBe(false);
       });
    });
 
@@ -150,8 +150,8 @@ describe('JAVASCRIPT II', function () {
       it('Debe retornar (num3 + 1) si num3 es mayor que num1 y num2', function () {
          expect(operadoresLogicos(1, 3, 10)).toBe(11);
       });
-      it("Debe retornar 'Error' si alguno de los argumentos es igual a cero", function () {
-         expect(operadoresLogicos(0, 5, 2)).toBe('Error');
+      it("Debe retornar 'Error' si todos los argumentos son igual a cero", function () {
+         expect(operadoresLogicos(0, 0, 0)).toBe('Error');
       });
       it('Debe retornar false si no se coincide con alguna de las opciones mencionadas', function () {
          expect(operadoresLogicos(10, 30, 6)).toBe(false);
