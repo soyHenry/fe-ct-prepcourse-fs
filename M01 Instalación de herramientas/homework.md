@@ -30,7 +30,7 @@ Recuerda que si tu sistema operativo en **Linux** ya tienes GIT instalado por de
 
 ### **📍 SLACK**
 
-No es obligatorio que desacargues este aplicación en tu computadora, pero te será más sencillo poder comunicarte con la comunidad.
+No es obligatorio que descargues este aplicación en tu computadora, pero te será más sencillo poder comunicarte con la comunidad.
 
 [**LINK DE DESACRGA**](https://slack.com/intl/es-ar/downloads/windows)
 
