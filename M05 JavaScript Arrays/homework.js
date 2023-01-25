@@ -43,7 +43,7 @@ function dePalabrasAFrase(palabras) {
 
 function arrayContiene(array, elemento) {
    // Verifica si el elemento existe dentro del arreglo recibido.
-   // Retornar True si está, o False si no está.
+   // Retornar true si está, o false si no está.
    // Tu código:
 }
 
@@ -86,13 +86,13 @@ function diaDeLaSemana(numeroDeDia) {
 
 function empiezaConNueve(num) {
    // Esta función recibe por parámetro un número.
-   // Debe retornar True si el entero inicia con 9 y False en otro caso.
+   // Debe retornar true si el entero inicia con 9 y false en otro caso.
    // Tu código:
 }
 
 function todosIguales(array) {
-   // Si todos los elementos del arreglo son iguales, retornar True.
-   // Caso contrario retornar False.
+   // Si todos los elementos del arreglo son iguales, retornar true.
+   // Caso contrario retornar false.
    // Tu código:
 }
 

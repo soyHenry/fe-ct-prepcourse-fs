@@ -45,19 +45,19 @@ function eliminarPropiedad(objeto, propiedad) {
 
 function tieneEmail(objetoUsuario) {
    // Verifica si el "objetoUsuario", en su propiedad "email", posee un valor definido.
-   // En ese caso retornar True. Caso contrario, False.
+   // En ese caso retornar true. Caso contrario, false.
    // Tu código:
 }
 
 function tienePropiedad(objeto, propiedad) {
    // Verifica si el objeto recibido posee una propiedad con el mismo nombre que el parámetro "propiedad".
-   // En ese caso retornar True. Caso contrario, False.
+   // En ese caso retornar true. Caso contrario, false.
    // Tu código:
 }
 
 function verificarPassword(objetoUsuario, password) {
    // Verifica si la propiedad "password" del "objetoUsuario" coincide con el parámetro "password".
-   // En ese caso retornar True. Caso contrario, False.
+   // En ese caso retornar true. Caso contrario, false.
    // Tu código:
 }
 
@@ -78,7 +78,7 @@ function agregarAmigo(objetoUsuario, nuevoAmigo) {
 function pasarUsuarioAPremium(objetoMuchosUsuarios) {
    // El parámetro "objetoMuchosUsuarios" es un arreglo de objetos (usuarios).
    // Cada usuario tiene una propiedad llamada "esPremium".
-   // Define esta propiedad de todos los usuarios como True.
+   // Define esta propiedad de todos los usuarios como true.
    // Retornar el arreglo.
    // Tu código:
 }
