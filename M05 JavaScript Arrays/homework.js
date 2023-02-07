@@ -35,7 +35,6 @@ function incrementarPorUno(array) {
 const arr2 = ["uno","dos","tres"]
 
 const prop = "cuatro";
-const prop2 = "nueve";
 
 function agregarItemAlFinalDelArray(array, elemento) {
    // Agrega el "elemento" al final del arreglo recibido.
@@ -45,6 +44,8 @@ function agregarItemAlFinalDelArray(array, elemento) {
    return array;
 }
 console.log("agregarItemAlFinalDelArray",agregarItemAlFinalDelArray(arr2, prop));
+
+const prop2 = "nueve";
 
 function agregarItemAlComienzoDelArray(array, elemento) {
    // Agrega el "elemento" al comienzo del arreglo recibido.
@@ -91,15 +92,17 @@ console.log(agregarNumeros([1,2,3]));
 function promedioResultadosTest(resultadosTest) {
    // El parámetro "resultadosTest" es un arreglo de números.
    // Itera (en un bucle) los elementos del arreglo y devuelve el promedio de las notas.
-   // Tu código:
+   // Tu código: 
+   // for(let i = 0; i < resultadosTest.length; i++){
+   //    sum += resultadosTest[i];
+   // }
+   // return sum / resultadosTest.length;
+
    let sum = 0;
-   for(let i = 0; i < resultadosTest.length; i++){
-      sum += resultadosTest[i];
-   }
-   return sum / resultadosTest.length;
+   return resultadosTest.reduce((num1, num2) => num1 + num2, sum)
 }
 
-console.log(promedioResultadosTest([2,3,4,5,6,3,2]));
+console.log("promedioResultadosTest",promedioResultadosTest([2,3,4,5,6,3,2]));
 
 function numeroMasGrande(arrayOfNums) {
    // El parámetro "arrayOfNums" es un arreglo de números.
@@ -114,7 +117,7 @@ function numeroMasGrande(arrayOfNums) {
    }
    return max;
 }
-console.log(numeroMasGrande([2,3,4,5,6,3,8]));
+console.log("numeroMasGrande",numeroMasGrande([2,3,4,5,6,3,8]));
 
 function multiplicarArgumentos() {
    // Usa la palabra clave `arguments` para multiplicar todos los argumentos y devolver el producto.
@@ -142,7 +145,7 @@ function multiplicarArgumentos() {
    //    return Array.from(arguments).reduce((product, currentValue) => product * currentValue, 1);
    //  }
 }
-console.log(multiplicarArgumentos(2,3,4));
+console.log("multiplicarArgumentos",multiplicarArgumentos(2,3,4));
 
 function cuentoElementos(array) {
    // Desarrolla una función que retorne la cantidad de elementos del arreglo cuyo valor sea mayor que 18.
@@ -151,7 +154,7 @@ function cuentoElementos(array) {
    let porUno = array.filter(numero => numero > 18);
    return porUno.length;
 }
-console.log(cuentoElementos([16,17,18,19,24,23]));
+console.log("cuentoElementos",cuentoElementos([16,17,18,19,24,23]));
 
 function diaDeLaSemana(numeroDeDia) {
    // Supongamos que los días de la semana se codifican como 1 = Domingo, 2 = Lunes y así sucesivamente.
@@ -164,7 +167,7 @@ function diaDeLaSemana(numeroDeDia) {
     return "Es día laboral";
    }
 }
-console.log(diaDeLaSemana(5));
+console.log("diaDeLaSemana",diaDeLaSemana(5));
 
 function empiezaConNueve(num) {
    // Esta función recibe por parámetro un número.
@@ -202,7 +205,7 @@ function mesesDelAño(array) {
       return "No se encontraron los meses pedidos";
    }
 }
-console.log(mesesDelAño(["marzo", "abril", "mayo", "noviembre", "octubre", "enero"]));
+console.log("mesesDelAño",mesesDelAño(["marzo", "abril", "mayo", "noviembre", "octubre", "enero"]));
 
 // for...in se utiliza para recorrer propiedades de objetos y devuelve las claves o índices de las propiedades.
 
@@ -243,7 +246,17 @@ function breakStatement(num) {
    // la ejecución y retornar el string: "Se interrumpió la ejecución".
    // [PISTA]: utiliza el statement 'break'.
    // Tu código:
+   let result = [];
+   for (let i = 0; i < 10; i++) {
+     if (num + i * 2 === i) {
+       return "Se interrumpió la ejecución";
+     }
+     result.push(num + i * 2);
+   }
+   return result;
 }
+
+console.log("breakStatement",breakStatement(12));
 
 function continueStatement(num) {
    // Iterar en un bucle aumentando en 2 el número recibido hasta un límite de 10 veces.
