@@ -3,34 +3,40 @@
 
 function devolverString(string) {
    // Debe retornar un string.
-   // Tu código:
+   let miString = "Henry";
+   return miString;
 }
 
 // ⛔️ "X" e "Y" son números.
 
 function suma(x, y) {
    // Retorna el resultado de su suma.
-   // Tu código:
+   let miSuma = x + y;
+   return miSuma;
 }
 
 function resta(x, y) {
    // Retorna el resultado de la resta.
-   // Tu código:
+   let miResta = x - y;
+   return miResta;
 }
 
 function divide(x, y) {
    // Retorna el resultado de su división.
-   // Tu código:
+   let miDivision = x / y;
+   return miDivision;
 }
 
 function multiplica(x, y) {
    // Retorna el resultado de su multiplicación.
-   // Tu código:
+   let miMult = x * y;
+   return miMult;
 }
 
 function obtenerResto(x, y) {
    // Obten el resto de la división de "x" entre "y".
-   // Tu código:
+   let resto = x % y;
+   return resto;
 }
 
 /*⚠️ NO MODIFIQUES NADA DEBAJO DE ESTO ⚠️*/
