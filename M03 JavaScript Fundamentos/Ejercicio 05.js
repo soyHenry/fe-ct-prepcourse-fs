@@ -2,32 +2,47 @@
 /*5️⃣ EJERCICIO 05 5️⃣*/
 
 function esPositivo(num) {
+   // La función recibe un entero. Devuelve como resultado un string que indica si el número
+   // es positivo o negativo.
+   // Si el número es positivo ---> "Es positivo".
+   // Si el número es negativo ---> "Es negativo".
+   // Si el número es 0, devuelve false.
    if(num > 0) return 'Es positivo'
    else if (num < 0) return 'Es negativo'
    else return false
 }
 
 function agregarSimboloExclamacion(str) {
+   // Agrega un símbolo de exclamación al final del string "str" y retórnalo
+   // Ejemplo: "hello world" ---> "hello world!"
    return str + '!'
 }
 
 function combinarNombres(nombre, apellido) {
+   // Retorna "nombre" y "apellido" combinados en un mismo string pero separados por un espacio.
+   // Ejemplo: ("Soy", "Henry") ---> "Soy Henry"
    return nombre + ' ' + apellido
 }
 
 function obtenerSaludo(nombre) {
+   // Toma el string "nombre" y concatena otra string en la cadena para que tome la siguiente forma:
+   // Ejemplo: "Martin" ---> "Hola Martin!"
    return 'Hola ' + nombre + '!'
 }
 
 function obtenerAreaRectangulo(alto, ancho) {
+   // Retornar el área de un rectángulo teniendo su altura y ancho.
    return alto * ancho
 }
 
 function retornarPerimetro(lado) {
+   // La función recibe como argumento la medida de un lado de un cuadrado.
+   // Debes retornar su perímetro.
    return lado + lado + lado + lado 
 }
 
 function areaDelTriangulo(base, altura) {
+   // Calcula el área de un triángulo y retorna el resultado.
    return (base * altura)/2
 }
 
