@@ -1,4 +1,76 @@
-function agregarMetodoCalculoDescuento(objetoProducto) {
+function sumarArray(arrayOfNumbers, cb) {
+    // Recibes un arreglo de números y un callback.
+    // Suma todos los números del arreglo.
+    // Este resultado debes pasárselo como argumento al callback recibido.
+    // [NOTA]: no debes reotrnar nada.
+    var suma = arrayOfNumbers.reduce((a,b) => { return a + b })
+    cb(suma)
+}
+arr = [1, 2, 3, 4, 5]
+var callback = function(cb) {
+    return cb
+}
+// var suma = arr.reduce((a,b) => { return a + b })
+// console.log(suma);
+console.log(sumarArray(arr, callback));
+
+/* function mayuscula(nombre) {
+    // Esta función recibe un nombre (string).
+    // Debe devolver el mismo nombre, pero con la primera letra en mayúscula.
+    // [Ejemplo]: "mario" ----> "Mario".
+    var upperCase = function(letra) {
+        return letra[0].toUpperCase() + letra.substring(1)
+    }
+
+    var  firstUppercase = function(cb1) {
+        return nombre + ' - ' + cb1(nombre)
+    }
+
+    return firstUppercase(upperCase)
+}
+console.log(mayuscula('ana')); */
+
+/* var devuelvoFrase = function(comida) {
+    return 'Hoy quiero comer: ' + comida
+}
+
+var hablar = function (comida, cb) {
+    return cb(comida)
+}
+
+var fraseFinal = hablar('Pizza', devuelvoFrase)
+console.log(fraseFinal); */
+
+/* function crearUsuario() {
+    // Crea una Clase de ES6 o una función constructora llamada "Usuario".
+    // El constructor de esta clase debe tener las propiedades: "usuario", "nombre", "email" y "password".
+    // El valor de cada propiedad la recibirá por parámetro.
+    // Además, esta clase debe tener un método llamado "saludar".
+    // Este método debe retornar el string: 'Hola, mi nombre es {{nombre}}'.
+    // El valor {{nombre}} debe ser el nombre definido para la instancia de la clase.
+    // Retornar la clase.
+    class Usuario {
+       constructor(usuario, nombre, email, password) {
+          this.usuario = usuario,
+          this.nombre = nombre,
+          this.email = email,
+          this.password = password
+       }
+    
+       saludar() {
+          return 'Hola, mi nombre es ' + this.nombre
+       }
+    }
+    
+    return Usuario
+}
+
+console.log();
+console.log(John.saludar());
+
+console.log(crearUsuario); */
+
+/* function agregarMetodoCalculoDescuento(objetoProducto) {
     // Agrega una propiedad al "objetoProducto" con el nombre "calcularPrecioDescuento".
     // Esta propiedad debe ser una función que multiplique el precio del producto por el porcentajeDeDescuento.
     // El "objetoProducto" posee una propiedad "precio" y una propiedad "porcentajeDeDescuento".
@@ -8,19 +80,6 @@ function agregarMetodoCalculoDescuento(objetoProducto) {
     // Precio ---> 10
     // PorcentajeDeDescuento ---> 0.2
     // Precio final ---> 8
-    /* objetoProducto.calcularPrecioDescuento = function() {
-        if(this.porcentajeDeDescuento % 1 == 0) {
-            let discount = this.precio * (this.porcentajeDeDescuento / 100)
-            let precioFinal = this.precio - discount
-            return precioFinal
-        } else {
-            let discount = this.precio * this.porcentajeDeDescuento
-            let precioFinal = this.precio - discount
-            return precioFinal
-        }
-    }
-    
-    return objetoProducto.calcularPrecioDescuento() */
 
     objetoProducto.calcularPrecioDescuento = function() {
         if(this.porcentajeDeDescuento % 1 == 0) return this.precio - (this.precio * (this.porcentajeDeDescuento / 100))
@@ -32,7 +91,7 @@ finalPrice = {
     precio: 10,
     porcentajeDeDescuento: 20
 }
-console.log(agregarMetodoCalculoDescuento(finalPrice));
+console.log(agregarMetodoCalculoDescuento(finalPrice)); */
 
 /* let objetoProducto = {
     precio: 10,
