@@ -1,4 +1,41 @@
-function sumarArray(arrayOfNumbers, cb) {
+function capicua(numero) {
+    // Si el número que recibes es capicúa debes retornar el string: "Es capicua".
+    // Caso contrario: "No es capicua".
+    const capicua = parseInt(numero.toString().split("").reverse().join(""))
+    if(numero === capicua) return 'Es capicua'
+    else return "No es capicua"
+ }
+
+ console.log(capicua(123));
+
+/* function numberOfCharacters(string) {
+    // La función recibe un string. Debes recorrerlo y retornar un objeto donde cada propiedad es una de las
+    // letras del string, y su valor es la cantidad de veces que se repite en el string.
+    // Las letras deben estar en orden alfabético.
+    // [EJEMPLO]: "adsjfdsfsfjsdjfhacabcsbajda" ---> { a: 5, b: 2, c: 2, d: 4, f: 4, h:1, j: 4, s: 5 }
+    let contador = {};
+   
+    for (let i = 0; i < string.length; i++) {
+       let letra = string[i];
+       if (contador[letra]) {
+          contador[letra]++;
+       } else {
+          contador[letra] = 1;
+       }
+    }
+ 
+    let letrasOrdenadas = Object.keys(contador).sort();
+ 
+    let resultado = {};
+    for (let i = 0; i < letrasOrdenadas.length; i++) {
+       let letra = letrasOrdenadas[i];
+       resultado[letra] = contador[letra];
+    }
+ 
+    return resultado;
+ }
+ */
+/* function sumarArray(arrayOfNumbers, cb) {
     // Recibes un arreglo de números y un callback.
     // Suma todos los números del arreglo.
     // Este resultado debes pasárselo como argumento al callback recibido.
@@ -12,7 +49,7 @@ var callback = function(cb) {
 }
 // var suma = arr.reduce((a,b) => { return a + b })
 // console.log(suma);
-console.log(sumarArray(arr, callback));
+console.log(sumarArray(arr, callback)); */
 
 /* function mayuscula(nombre) {
     // Esta función recibe un nombre (string).
