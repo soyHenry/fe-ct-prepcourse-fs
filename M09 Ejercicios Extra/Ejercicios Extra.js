@@ -58,7 +58,7 @@ function asAmirror(frase) {
    // Recibes una frase. Tu tarea es retornar un nuevo string en el que el orden de las palabras sea el mismo.
    // La diferencia es que cada palabra estará escrita al inverso.
    // [EJEMPLO]: "The Henry Challenge is close!"  ---> "ehT yrneH egnellahC si !esolc"
-   const arrPhrases = frase.split(' '), arrAccommodated = [];
+   const arrPhrases = frase.trim().split(' '), arrAccommodated = [];
 
    // Orden en el cual se presenta el array
    for(let i = 0; i < arrPhrases.length; i ++){
@@ -72,7 +72,7 @@ function asAmirror(frase) {
       arrAccommodated.push(' ');
    }
 
-   return arrAccommodated.join('');
+   return arrAccommodated.join('').trim();
    
 }
 
