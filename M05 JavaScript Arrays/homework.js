@@ -101,7 +101,10 @@ function numeroMasGrande(arrayOfNums) {
    // El parámetro "arrayOfNums" es un arreglo de números.
    // Retornar el número más grande.
    // Tu código:
-   return Math.max(arrayOfNums);
+   if (arrayOfNums.length === 0) {
+      return undefined;
+   }
+   return Math.max(...arrayOfNums);
 }
 
 function multiplicarArgumentos() {
@@ -125,13 +128,8 @@ function multiplicarArgumentos() {
 function cuentoElementos(array) {
    // Desarrolla una función que retorne la cantidad de elementos del arreglo cuyo valor sea mayor que 18.
    // Tu código:
-   let contador = 0;
-   for (let i = 0; i < arreglo.length; i++) {
-    if (arreglo[i] > 18) {
-      contador++;
-    }
-   }
-   return contador;
+   const filteredArray = array.filter(elemento => elemento > 18);
+   return filteredArray.length;
 }
 
 function diaDeLaSemana(numeroDeDia) {
@@ -139,12 +137,12 @@ function diaDeLaSemana(numeroDeDia) {
    // Realiza una función que, dado el número del día de la semana, retorne: "Es fin de semana"
    // si el día corresponde a "Sábado" o "Domingo", y "Es dia laboral" en caso contrario.
    // Tu código:
-   if (numeroDeDia === 1 || numeroDeDia === 7) {
-      return "Es fin de semana";
-    } else {
-      return "Es día laboral";
-    }
-}
+   if ((numeroDeDia === 1) || (numeroDeDia === 7)) {
+       return "Es fin de semana";
+   } else {
+      return "Es dia laboral";
+   }
+}  
 
 function empiezaConNueve(num) {
    // Esta función recibe por parámetro un número.
@@ -176,18 +174,12 @@ function mesesDelAño(array) {
    // Si alguno de los meses no está, retornar el string: "No se encontraron los meses pedidos".
    // Tu código:
    const mesesPedidos = ["Enero", "Marzo", "Noviembre"];
-  const mesesEncontrados = [];
-  for (let i = 0; i < array.length; i++) {
-    const mesActual = arreglo[i];
-    if (mesesPedidos.includes(mesActual)) {
-      mesesEncontrados.push(mesActual);
-    }
-  }
-  if (mesesEncontrados.length === 3) {
-    return mesesEncontrados;
-  } else {
-    return "No se encontraron los meses pedidos";
-  }
+   const mesesEncontrados = array.filter(mes => mesesPedidos.includes(mes));
+   if (mesesPedidos.every(mes => mesesEncontrados.includes(mes))) {
+      return mesesEncontrados;
+   } else {
+      return "No se encontraron los meses pedidos";
+   }
 }
 
 function tablaDelSeis() {
