@@ -71,14 +71,20 @@ function capicua(numero) {
    // Si el número que recibes es capicúa debes retornar el string: "Es capicua".
    // Caso contrario: "No es capicua".
    // Tu código:
-   
+  numeroOriginal = numero.toString();
+  numeroInvertido = numeroOriginal.split("").reverse().join("");
+  if (numeroOriginal === numeroInvertido){
+   return "Es capicua"
+  }else{
+   return "No es capicua"
+  }
 }
 
 function deleteAbc(string) {
    // Tu tarea es eliminar las letras "a", "b" y "c" del string recibido.
    // Retorna el string sin estas letras.
    // Tu código:
-   string = string.replace(/[abc]/g, "");
+   string = string.replace(/[abc]/g,"");
    return string;
 }
 
@@ -88,7 +94,10 @@ function sortArray(arrayOfStrings) {
    // de la longitud de cada string.
    // [EJEMPLO]: ["You", "are", "beautiful", "looking"]  ---> [“You", "are", "looking", "beautiful"]
    // Tu código:
-   
+
+   newArray = [];
+   newArray = arrayOfStrings.sort((a,b) => a.length - b.length);
+   return newArray;
 }
 
 function buscoInterseccion(array1, array2) {
@@ -98,7 +107,24 @@ function buscoInterseccion(array1, array2) {
    // Si no tienen elementos en común, retornar un arreglo vacío.
    // [PISTA]: los arreglos no necesariamente tienen la misma longitud.
    // Tu código:
+   newArray = [];
+   for (let i = 0; i < array1.length; i++) {
+      if(array2.includes(array1[i])){
+         newArray.push(array1[i])
+      }
+   }return newArray;
+
 }
+
+
+
+
+
+
+
+
+
+
 
 /*⚠️ NO MODIFIQUES NADA DEBAJO DE ESTO ⚠️*/
 module.exports = {
