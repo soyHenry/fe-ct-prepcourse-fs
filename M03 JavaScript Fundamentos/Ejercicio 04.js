@@ -12,7 +12,7 @@ function elevarAlCuadrado(num) {
 function elevarAlCubo(num) {
    // Retorna el valor de "num" elevado al cubo.
    // Tu código:
-   return Math.pow(num_2, 3)
+   return Math.pow(num, 3)
 }
 
 function elevar(num, exponent) {
