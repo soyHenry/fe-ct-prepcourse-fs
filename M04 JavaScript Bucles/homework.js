@@ -176,7 +176,7 @@ function esVerdadero(valor) {
 }
 let animales;
 
-animales = ["perro", "gato"];
+animales = ["perro"];
 console.log(animales);
 function tieneTresDigitos(num) {
   return num.toString().length === 3;
