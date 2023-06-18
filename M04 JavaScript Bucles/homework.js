@@ -198,7 +198,7 @@ function doWhile(num) {
   // Utilizar el bucle Do-While.
   // Tu código:
 }
-
+let a;
 /*⚠️ NO MODIFIQUES NADA DEBAJO DE ESTO ⚠️*/
 module.exports = {
   obtenerMayor,
