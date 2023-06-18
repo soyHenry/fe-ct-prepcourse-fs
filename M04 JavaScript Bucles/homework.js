@@ -174,7 +174,10 @@ function esVerdadero(valor) {
   // Caso contrario, retornar "Soy falso".
   // Tu código:
 }
+let animales;
 
+animales = ["perro", "gato"];
+console.log(animales);
 function tieneTresDigitos(num) {
   return num.toString().length === 3;
   // Si el número recibido tiene tres dígitos retornar true.
