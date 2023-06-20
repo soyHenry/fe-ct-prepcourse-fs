@@ -65,6 +65,9 @@ function agregarNumeros(arrayOfNums) {
    // El parámetro "arrayOfNums" debe ser un arreglo de números.
    // Suma todos los elementos y retorna el resultado.
    // Tu código:
+   return arrayOfNums.reduce(function(acumulador, elemento) {
+      return acumulador + elemento;
+   }, 0);
 }
 
 function promedioResultadosTest(resultadosTest) {
