@@ -35,12 +35,16 @@ function agregarItemAlFinalDelArray(array, elemento) {
    // Agrega el "elemento" al final del arreglo recibido.
    // Retorna el arreglo.
    // Tu código:
+   array.push (elemento);
+   return array;  
 }
 
 function agregarItemAlComienzoDelArray(array, elemento) {
    // Agrega el "elemento" al comienzo del arreglo recibido.
    // Retorna el arreglo.
    // Tu código:
+   array.unshift (elemento);
+   return array;
 }
 
 function dePalabrasAFrase(palabras) {
