@@ -57,7 +57,6 @@ WINDOWS $ type nul > [nombreDelArchivo]
 
 > **⚠️ [NOTA]:** ¡CUIDADO! Esto traspasa cualquier "papelera de reciclaje" que exista en el sistema y elimina los archivos PERMANENTEMENTE. Esto no eliminará carpetas. Necesitamos un comando especial para eso.
 
-
 ---
 
 </br >
@@ -92,12 +91,25 @@ Ingresa a la carpeta que acabas de crear utilizando los comandos ya aprendidos.
 
 Ahora debes crear un archivo llamado "**_primerArchivo.txt_**". Revisa el comando correspondiente a partir del sistema operativo que utilices (Linux o Windows).
 
----
-
 </br >
 
-### **📍 EJERCICIO 05**
+## **💻 SUBE TUS AVANCES**
 
-En este ejercicio debes subir tus cambios al repositorio de Github. Para lograr esto te recomendamos que sigas el siguiente video:
+Te invitamos, cada vez que termines una homework, a que subas tus avances a tu repositorio. ¿Recordemos cómo hacer esto?
 
-[![Alt text](../Assets//M1Video.png)](https://rise.articulate.com/share/O0SjmUFcjx_3AXSA2lizESbHitgJIOpq#/lessons/I9cctwN3h79mfdlDPlrgxFt9e4jePcfJ)
+Deberás ejecutar estos comandos:
+
+```bash
+git add .
+// Este comando te permitirá guardar tus cambios en Git.
+
+git commmit -m "tuMensaje"
+// Este comando te permitirá darle un título a tus cambios.
+
+git push
+// Este comando subirá tus cambios al repositorio de GitHub.
+```
+
+Recuerda que todos estos comandos son necesarios. Si tienes alguna duda, ¡te invitamos a que repases estos comandos en el Prep Course!
+
+Encontrarás toda la explicación dentro de: "**`Módulo 2 | Creación de repositorio y primer commit`**".

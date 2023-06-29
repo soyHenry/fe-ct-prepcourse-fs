@@ -48,3 +48,28 @@ En esta Homework podrás poner en práctica:
 ¡Felicitaciones si haz llegado hasta aquí! 🤩 🥳 😎
 
 En este archivo encontrarás una serie de funciones. Cada función te pedirá que resuelvas un problema poniendo en práctica lógica de programación. Tendrás que utilizar todo lo que haz aprendido a lo largo del Prep Course.
+
+---
+
+</br >
+
+## **💻 SUBE TUS AVANCES**
+
+Te invitamos, cada vez que termines una homework, a que subas tus avances a tu repositorio. ¿Recordemos cómo hacer esto?
+
+Deberás ejecutar estos comandos:
+
+```bash
+git add .
+// Este comando te permitirá guardar tus cambios en Git.
+
+git commmit -m "tuMensaje"
+// Este comando te permitirá darle un título a tus cambios.
+
+git push
+// Este comando subirá tus cambios al repositorio de GitHub.
+```
+
+Recuerda que todos estos comandos son necesarios. Si tienes alguna duda, ¡te invitamos a que repases estos comandos en el Prep Course!
+
+Encontrarás toda la explicación dentro de: "**`Módulo 2 | Creación de repositorio y primer commit`**".

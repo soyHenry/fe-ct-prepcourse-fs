@@ -86,3 +86,24 @@ En los siguientes 9 ejercicios deberás desarrollar funciones que incluyen lógi
 ---
 
 </br >
+
+## **💻 SUBE TUS AVANCES**
+
+Te invitamos, cada vez que termines una homework, a que subas tus avances a tu repositorio. ¿Recordemos cómo hacer esto?
+
+Deberás ejecutar estos comandos:
+
+```bash
+git add .
+// Este comando te permitirá guardar tus cambios en Git.
+
+git commmit -m "tuMensaje"
+// Este comando te permitirá darle un título a tus cambios.
+
+git push
+// Este comando subirá tus cambios al repositorio de GitHub.
+```
+
+Recuerda que todos estos comandos son necesarios. Si tienes alguna duda, ¡te invitamos a que repases estos comandos en el Prep Course!
+
+Encontrarás toda la explicación dentro de: "**`Módulo 2 | Creación de repositorio y primer commit`**".
