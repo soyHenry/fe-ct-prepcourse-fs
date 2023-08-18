@@ -23,9 +23,9 @@ function nuevoUsuario(nombre, email, password) {
    // Retornar el objeto.
    // Tu código:
    let persona = {
-      nombre:'Nydia',
-      email:'mas@gmail.com',
-      password:'Payasada',
+      nombre:nombre,
+      email:email,
+      password:password,
    };
     return persona;
 }
