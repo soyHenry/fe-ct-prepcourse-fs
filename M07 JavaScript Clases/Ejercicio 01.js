@@ -21,7 +21,7 @@ function crearUsuario() {
          return 'Hola, ni nombre es {{this.nombre}}'
       }
    }
-return Usuario;
+return Usuario ();
 }
 
 function agregarMetodoPrototype(Usuario) {
