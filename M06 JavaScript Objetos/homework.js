@@ -104,6 +104,8 @@ function actualizarPassword(objetoUsuario, nuevaPassword) {
    // La nueva contraseña la recibes por parámetro.
    // Retornar el objeto.
    // Tu código:
+   objetoUsuario.password = nuevaPassword;
+   return objetoUsuario;
 }
 
 function agregarAmigo(objetoUsuario, nuevoAmigo) {
@@ -111,6 +113,8 @@ function agregarAmigo(objetoUsuario, nuevoAmigo) {
    // Debes agregar el "nuevoAmigo" al final de este arreglo.
    // Retornar el objeto.
    // Tu código:
+   objetoUsuario.amigos =[nuevoAmigo];
+   return objetoUsuario; 
 }
 
 function pasarUsuarioAPremium(objetoMuchosUsuarios) {
