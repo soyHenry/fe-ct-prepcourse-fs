@@ -64,8 +64,8 @@ function filter(arrayOfStrings) {
    // Tu código:
    var newArray=[];
    for(let i=0; i< arrayOfStrings.length; i++){
-      if (arrayOfStrings[i].at(0)=='a') {
-         newArray.push(i);
+      if (arrayOfStrings[i].at(0)==='a') {
+         newArray.push(arrayOfStrings[i]);
       }
    };
    return newArray;
