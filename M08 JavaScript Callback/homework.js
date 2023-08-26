@@ -31,9 +31,10 @@ function sumarArray(arrayOfNumbers, cb) {
    // [NOTA]: no debes reotrnar nada.
    // Tu código:
    var suma=0;
-   for (let i=0; i<arrayOfNumbers.length; i++){
+  /*  for (let i=0; i<arrayOfNumbers.length; i++){
       suma+= arrayOfNumbers[i];
-   }
+   } */
+ suma= arrayOfNumbers.reduce((a, b) => a + b);
    cb(suma);
 }
 
@@ -42,7 +43,7 @@ function forEach(array, cb) {
    // Debes iterar sobre el arreglo, y por cada elemento ejecutar el callback.
    // Debes pasarle el elemento como argumento al callback.
    // Tu código:
-
+   array.forEach((element) => cb(element));
 }
 
 function map(array, cb) {
@@ -50,6 +51,11 @@ function map(array, cb) {
    // Tiene que guardar el resultado devuelto por el callback en cada elemento dentro de un nuevo arreglo.
    // Retorna el nuevo arreglo.
    // Tu código:
+   let newArrays=[];
+   array.map((num)=>{
+      newArrays.push(cb(num));
+   })
+   return newArrays;
 }
 
 function filter(arrayOfStrings) {
@@ -58,9 +64,9 @@ function filter(arrayOfStrings) {
    // Tu código:
    var newArray=[];
    for(let i=0; i< arrayOfStrings.length; i++){
-      if (arrayOfStrings[i].at(0)==='a') {
+      if (arrayOfStrings[i].at(0)=='a') {
          newArray.push(i);
-      };
+      }
    };
    return newArray;
 }
