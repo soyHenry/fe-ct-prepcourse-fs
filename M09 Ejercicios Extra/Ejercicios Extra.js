@@ -43,6 +43,19 @@ function capToFront(string) {
    // Retornar el string.
    // [EJEMPLO]: soyHENRY ---> HENRYsoy
    // Tu código:
+   let arrLowerCase=[];
+   let arrUpperCase=[];
+   let nStringInver="";
+   for (let i= 0; i< string.length; i++){
+      if(string[i]===string[i].toUpperCase()){
+         arrUpperCase.push([string[i]]);
+      }else{
+         arrLowerCase.push([string[i]]);
+      }
+   };
+  
+   nStringInver= arrUpperCase.join("") + arrLowerCase.join(""); 
+   return nStringInver;
 }
 
 function asAmirror(frase) {
@@ -72,8 +85,8 @@ function deleteAbc(string) {
    // Tu tarea es eliminar las letras "a", "b" y "c" del string recibido.
    // Retorna el string sin estas letras.
    // Tu código:
-let nStrg='';
-return nStrg.filter(('a','b','c') => el.includes(query.toLowerCase()));
+/* let nStrg='';
+return nStrg.filter(('a','b','c') => el.includes(query.toLowerCase())); */
 }
 
 function sortArray(arrayOfStrings) {
@@ -83,14 +96,14 @@ function sortArray(arrayOfStrings) {
    // [EJEMPLO]: ["You", "are", "beautiful", "looking"]  ---> [“You", "are", "looking", "beautiful"]
    // Tu código:
 
-   let newArray=[];
+   /* let newArray=[];
    for (let i=0; i< arrayOfStrings.length; i++){
       for (let j=1; i< arrayOfStrings.length; j++){
          if (arrayOfStrings[i].length <= arrayOfStrings[j].length){
             newArray.push(arrayOfStrings[i]);
          }
       }
-   }
+   } */
 }
 
 function buscoInterseccion(array1, array2) {
@@ -100,11 +113,11 @@ function buscoInterseccion(array1, array2) {
    // Si no tienen elementos en común, retornar un arreglo vacío.
    // [PISTA]: los arreglos no necesariamente tienen la misma longitud.
    // Tu código:
-   let arrayNumbers=[];
+ /*   let arrayNumbers=[];
    if(array1.includes(array2)){
       arrayNumbers.push();
    };
-   return arrayNumbers
+   return arrayNumbers */
 }
 
 /*⚠️ NO MODIFIQUES NADA DEBAJO DE ESTO ⚠️*/
