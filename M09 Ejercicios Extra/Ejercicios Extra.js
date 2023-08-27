@@ -92,8 +92,7 @@ function deleteAbc(string) {
    // Tu tarea es eliminar las letras "a", "b" y "c" del string recibido.
    // Retorna el string sin estas letras.
    // Tu código:
-/* let nStrg='';
-return nStrg.filter(('a','b','c') => el.includes(query.toLowerCase())); */
+return string.replace(/[abc]/g,'');
 }
 
 function sortArray(arrayOfStrings) {
@@ -103,14 +102,7 @@ function sortArray(arrayOfStrings) {
    // [EJEMPLO]: ["You", "are", "beautiful", "looking"]  ---> [“You", "are", "looking", "beautiful"]
    // Tu código:
 
-   /* let newArray=[];
-   for (let i=0; i< arrayOfStrings.length; i++){
-      for (let j=1; i< arrayOfStrings.length; j++){
-         if (arrayOfStrings[i].length <= arrayOfStrings[j].length){
-            newArray.push(arrayOfStrings[i]);
-         }
-      }
-   } */
+   return arrayOfStrings.sort((a,b)=> a.length - b.length);
 }
 
 function buscoInterseccion(array1, array2) {
@@ -120,11 +112,22 @@ function buscoInterseccion(array1, array2) {
    // Si no tienen elementos en común, retornar un arreglo vacío.
    // [PISTA]: los arreglos no necesariamente tienen la misma longitud.
    // Tu código:
- /*   let arrayNumbers=[];
-   if(array1.includes(array2)){
-      arrayNumbers.push();
-   };
-   return arrayNumbers */
+   let arrayNumbers=[];
+   if (array1.length<=array2.length){
+      for (let i=0; i<array2.length; i++){
+        if(array2.includes(array1[i])){
+         arrayNumbers.push(array1[i]);
+        }; 
+      }
+   } else{
+      for (let i=0; i<array1.length; i++){
+         if(array1.includes(array2[i])){
+          arrayNumbers.push(array2[i]);
+         }; 
+       }
+   }
+  
+   return arrayNumbers
 }
 
 /*⚠️ NO MODIFIQUES NADA DEBAJO DE ESTO ⚠️*/
