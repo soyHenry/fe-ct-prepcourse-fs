@@ -50,6 +50,16 @@ function asAmirror(frase) {
    // La diferencia es que cada palabra estará escrita al inverso.
    // [EJEMPLO]: "The Henry Challenge is close!"  ---> "ehT yrneH egnellahC si !esolc"
    // Tu código:
+   let arrayAsAmirror=[];
+   let arrayMirror=[];
+   let newString="";
+   arrayAsAmirror= frase.split(' ');
+   for (let i =0; i< arrayAsAmirror.length; i++){
+      var reverse = arrayAsAmirror[i].split("").reverse().join("");
+      arrayMirror.push(reverse);
+    };
+    newString = arrayMirror.join(' ');
+return newString;
 }
 
 function capicua(numero) {
@@ -62,7 +72,8 @@ function deleteAbc(string) {
    // Tu tarea es eliminar las letras "a", "b" y "c" del string recibido.
    // Retorna el string sin estas letras.
    // Tu código:
-
+let nStrg='';
+return nStrg.filter(('a','b','c') => el.includes(query.toLowerCase()));
 }
 
 function sortArray(arrayOfStrings) {
