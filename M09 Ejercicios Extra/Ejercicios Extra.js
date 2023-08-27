@@ -6,6 +6,12 @@ function deObjetoAarray(objeto) {
    // Estos elementos debe ser cada par clave:valor del objeto recibido.
    // [EJEMPLO]: {D: 1, B: 2, C: 3} ---> [['D', 1], ['B', 2], ['C', 3]].
    // Tu código:
+
+   let arrayOfArrays=[];
+   for (let property in objeto){
+      arrayOfArrays.push([property,objeto[property]]);
+};
+return arrayOfArrays;
 }
 
 function numberOfCharacters(string) {
@@ -14,6 +20,21 @@ function numberOfCharacters(string) {
    // Las letras deben estar en orden alfabético.
    // [EJEMPLO]: "adsjfdsfsfjsdjfhacabcsbajda" ---> { a: 5, b: 2, c: 2, d: 4, f: 4, h:1, j: 4, s: 5 }
    // Tu código:
+   let objeto={};
+   let suma=1;
+   let newStrToArray=[];
+   newStrToArray=string.split('');
+   newStrToArray.sort();
+   for (let i=0; i<newStrToArray.length; i++){
+      if (newStrToArray[i]===newStrToArray[i+1]){
+        suma+=1;
+        
+      }else{
+        objeto[newStrToArray[i]]=suma;
+        suma=1; 
+      }
+    };
+   return objeto;
 }
 
 function capToFront(string) {
@@ -41,6 +62,7 @@ function deleteAbc(string) {
    // Tu tarea es eliminar las letras "a", "b" y "c" del string recibido.
    // Retorna el string sin estas letras.
    // Tu código:
+
 }
 
 function sortArray(arrayOfStrings) {
@@ -49,6 +71,15 @@ function sortArray(arrayOfStrings) {
    // de la longitud de cada string.
    // [EJEMPLO]: ["You", "are", "beautiful", "looking"]  ---> [“You", "are", "looking", "beautiful"]
    // Tu código:
+
+   let newArray=[];
+   for (let i=0; i< arrayOfStrings.length; i++){
+      for (let j=1; i< arrayOfStrings.length; j++){
+         if (arrayOfStrings[i].length <= arrayOfStrings[j].length){
+            newArray.push(arrayOfStrings[i]);
+         }
+      }
+   }
 }
 
 function buscoInterseccion(array1, array2) {
@@ -58,6 +89,11 @@ function buscoInterseccion(array1, array2) {
    // Si no tienen elementos en común, retornar un arreglo vacío.
    // [PISTA]: los arreglos no necesariamente tienen la misma longitud.
    // Tu código:
+   let arrayNumbers=[];
+   if(array1.includes(array2)){
+      arrayNumbers.push();
+   };
+   return arrayNumbers
 }
 
 /*⚠️ NO MODIFIQUES NADA DEBAJO DE ESTO ⚠️*/
