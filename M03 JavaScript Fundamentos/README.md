@@ -23,7 +23,7 @@ Para ejecutar los tests de las homeworks debes:
 -  Si quieres ejecutar los tests de esta homework en específico ejecuta el comando:
 
 ```bash
-    npm test 03
+    npm test Ejercicio 01
 ```
 
 ---
