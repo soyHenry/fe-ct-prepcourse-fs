@@ -1,4 +1,4 @@
-![HenryLogo](../Assets//logoBannerHenry.png)
+gi![HenryLogo](../Assets//logoBannerHenry.png)
 
 # **HOMEWORK 05 | JAVASCRIPT III**
 
