@@ -9,7 +9,18 @@ function esPositivo(num) {
    // Si el número es 0, devuelve false.
    // Tu código: 
 
+num = prompt("variable 'num': ")
+if(num›= 0)
+{
+     return 'Número Positivo';
 }
+
+if(num‹=0)
+{
+    return 'Número negativo';
+}
+
+return esPositivo
 
 function agregarSimboloExclamacion(str) {
    // Agrega un símbolo de exclamación al final del string "str" y retórnalo
