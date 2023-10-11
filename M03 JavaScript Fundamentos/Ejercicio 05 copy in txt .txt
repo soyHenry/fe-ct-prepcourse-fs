@@ -36,10 +36,15 @@ function combinarNombres(nombre, apellido) {
    // Tu código:
 }
 
-function obtenerSaludo(nombre) {
+function obtenerSaludo(nombre, zk) {
    // Toma el string "nombre" y concatena otra string en la cadena para que tome la siguiente forma:
    // Ejemplo: "Martin" ---> "Hola Martin!"
    // Tu código:
+
+nombre = Camila Punta
+zk = '¡ ¿Que tal ' + nombre + '!';
+
+return zk
 }
 
 function obtenerAreaRectangulo(alto, ancho) {
