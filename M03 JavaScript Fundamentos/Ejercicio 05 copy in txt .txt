@@ -26,14 +26,17 @@ function agregarSimboloExclamacion(str) {
    // Agrega un símbolo de exclamación al final del string "str" y retórnalo
    // Ejemplo: "hello world" ---> "hello world!"
    // Tu código:
-
-str = prompt('Guy: _day_ 2020. Free Guy')
-return 
+str = 'Me falta aplicar, disculpame'
+return str + '!'
 
 function combinarNombres(nombre, apellido) {
    // Retorna "nombre" y "apellido" combinados en un mismo string pero separados por un espacio.
    // Ejemplo: ("Soy", "Henry") ---> "Soy Henry"
    // Tu código:
+nombre = 'Armando';
+Apellido = ' Boronchelli';
+
+return nombre + apellido;
 }
 
 function obtenerSaludo(nombre, zk) {
@@ -41,10 +44,10 @@ function obtenerSaludo(nombre, zk) {
    // Ejemplo: "Martin" ---> "Hola Martin!"
    // Tu código:
 
-nombre = Camila Punta
-zk = '¡ ¿Que tal ' + nombre + '!';
+nombre = 'Camilo Punta '
+zk = 'juegas Ajedrez'
 
-return zk
+return '¿ ' + nombre + zk + '?'; 
 }
 
 function obtenerAreaRectangulo(alto, ancho) {
@@ -56,6 +59,7 @@ function retornarPerimetro(lado) {
    // La función recibe como argumento la medida de un lado de un cuadrado.
    // Debes retornar su perímetro.
    // Tu código:
+
 }
 
 function areaDelTriangulo(base, altura) {
