@@ -70,6 +70,10 @@ function retornarPerimetro(lado) {
 function areaDelTriangulo(base, altura) {
    // Calcula el área de un triángulo y retorna el resultado.
    // Tu código:
+base = 26
+altura = 39
+
+return area * altura
 }
 
 function deEuroAdolar(euro) {
