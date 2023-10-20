@@ -53,6 +53,11 @@ return '¿ ' + nombre + zk + '?';
 function obtenerAreaRectangulo(alto, ancho) {
    // Retornar el área de un rectángulo teniendo su altura y ancho.
    // Tu código:
+
+alto = 25;
+ancho = 38;
+
+return (alto*2)*(2*ancho)
 }
 
 function retornarPerimetro(lado) {
