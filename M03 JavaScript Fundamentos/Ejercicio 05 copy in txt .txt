@@ -76,10 +76,15 @@ altura = 39
 return area * altura
 }
 
-function deEuroAdolar(euro) {
+function deEuroAdolar(euros, valor_euro) {
    // Supongamos que 1 euro equivale a 1.20 dólares.
    // Debes calcular el valor recibido como argumento pasándolo a dolares.
    // Tu código:
+
+valor_euro= 1.20
+euros = 8.5
+
+return (valor_euro * euro)
 }
 
 function esVocal(letra) {
@@ -87,6 +92,22 @@ function esVocal(letra) {
    // Si el usuario ingresa un string de más de un caracter debes retornar el mensaje: "Dato incorrecto".
    // Si no es vocal, tambien debe retornar "Dato incorrecto".
    // Tu código:
+
+
+if (letra === a,e,i,o,u)
+{
+   alert('Es Vocal');
+};
+if (letra == '@')
+{
+→→alert('Dato Incorrecto');
+}
+else
+{
+   alert('Dato Incorrecto');
+}
+ 
+return esVocal
 }
 
 /*⚠️ NO MODIFIQUES NADA DEBAJO DE ESTO ⚠️*/
