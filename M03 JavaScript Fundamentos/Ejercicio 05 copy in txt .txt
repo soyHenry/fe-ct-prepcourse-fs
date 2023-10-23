@@ -58,6 +58,7 @@ alto = 25;
 ancho = 38;
 
 return (alto*2)*(2*ancho)
+
 }
 
 function retornarPerimetro(lado) {
