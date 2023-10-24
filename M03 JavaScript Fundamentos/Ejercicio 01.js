@@ -20,7 +20,8 @@ const nuevaResta = 10 - 2 === 8 ;
 const nuevaMultiplicacion = 10 * 4 === 40;
 
 // Resuelve el siguiente problema matemático.
-const nuevoModulo = 21 % 5 === 0.0105;
+const nuevoModulo = 3 % 25 == 0.75;
+
 
 /*⚠️ NO MODIFIQUES NADA DEBAJO DE ESTO ⚠️*/
 module.exports = {

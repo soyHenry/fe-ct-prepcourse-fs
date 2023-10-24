@@ -3,51 +3,62 @@
 
 function devolverString(string) {
    // Debe retornar un string.
-   console.log('String')
+   console.log(string)
    return string
 }
-
+sumatring('venado')
 // ⛔ "X" e "Y" son números.
 
 function suma(x, y) 
-{    // Retorna el resultado de su suma.
+// Retorna el resultado de su suma.
  
-   // Tu código:
-   x = prompt('El valor X:'); 
-   y = prompt('El valor Y:');
-   var z = x + y;
+   // Tu código: 
+ {   
+  x = 8
+  y = 5
 
-   console.log(typeof z);
+  return x + y;
+ }
 
-   return x+y;
-   }
+var resta  = function (x, y, h)
+{
+   x - y;
+x = 89;
+y = 45;
 
-
-
-function resta(x, y) {
-   // Retorna el resultado de la resta.
-
-
-   // Tu código:
+return x - y;
 }
-
 
 
 function divide(x, y) {
    // Retorna el resultado de su división.
    // Tu código:
+ 
+   x - y;
+
+   x = 7
+   y = 5
+
+   return x / y;
 }
 
-
-function multiplica(x, y) {
+function multiplica(x, y, h) {
    // Retorna el resultado de su multiplicación.
-   // Tu código:
+   // Tu código:to9n  873
+  
+   y= 8   
+   x = 23 
+   
+   return ;
 }
 
-
-function obtenerResto(x, y) {
+function obtenerResto(x, y, k) {
    // Obten el resto de la división de "x" entre "y".
    // Tu código:
+   x = 82;
+   y = 6;
+   
+   return x & y;
 }
 
 
