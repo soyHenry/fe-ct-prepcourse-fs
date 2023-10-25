@@ -1,3 +1,5 @@
+
+
 /*⚠️ NO MODIFIQUES EL NOMBRE DE LAS DECLARACIONES ⚠️*/
 /*5️⃣ EJERCICIO 05 5️⃣*/
 
@@ -7,12 +9,50 @@
    // Si el número es negativo ---> "Es negativo".
    // Si el número es 0, devuelve false.
    // Tu código:
+
+ </head>
+
+  <body> function esPositivo(num) {
+
+   num = prompt('¿que número quieres introducir? ');
+
+   if(0 <= num)
+   {
+         console.log('El número introducido es negativo')
+   }
+
+   if(0 >= num)
+   {
+         console.log('El número introducido es positivo')
+   }
+   
+
+         console.log('Número por favor')
+   
+   return esPositivo;
 }
+num = 6
+
 
 function agregarSimboloExclamacion(string) {
    // Agrega un símbolo de exclamación al final del string "str" y retórnalo
    // Ejemplo: "hello world" ---> "hello world!"
    // Tu código:
+string = prompt('objeto, Articulo, inmóbil')
+
+if (string === typeof String)
+{
+    string + 'es material. \n ¿quieres correr?' + '!';
+}
+
+if (string === typeof Number)
+{
+    string + '¿quieres jugar ajedrez? '+ '!'   
+}
+
+return string 
+
+
 }
 
 function combinarNombres(nombre,apellido,azu) {
@@ -23,7 +63,7 @@ function combinarNombres(nombre,apellido,azu) {
    apellido = 'Bustamante'
    azu = (nombre + 'op' + apellido)
       console.log()
-   
+   return nombre +  apellido;
 
 }
 
@@ -37,7 +77,7 @@ function obtenerSaludo(nombre, nombre2) {
       console.log(man_en_la_cara)
       salida = nombre + nombre2;
 
-      
+      return nombre
    }     
 
 function obtenerAreaRectangulo(alto, ancho) {
@@ -46,7 +86,7 @@ function obtenerAreaRectangulo(alto, ancho) {
       ancho = 43
       alto = 86
 
-      console.log(2*alto * (2*ancho))
+      return (ancho * 2) * (2 * alto);
 }
 
 function retornarPerimetro(lado_a, lado_b) {
@@ -57,7 +97,7 @@ function retornarPerimetro(lado_a, lado_b) {
       lado_a = 8 
       lado_b = 15
 
-      console.log(2*lado_a + 2*lado_b)
+      return (2 * lado_a) + (2 * lado_b)
 
    }
 
@@ -68,19 +108,19 @@ function areaDelTriangulo(base, altura)
    base = 5;
    altura = 10;
    
-   console.log(base * altura)
+   return base * altura
 }
 
 function deEuroAdolar(euro, cambio, dolar) {
    // Supongamos que 1 euro equivale a 1.20 dólares.
    // Debes calcular el valor recibido como argumento pasándolo a dolares.
    // Tu código:
-euro = 1.20; // tiempo laborado: insumos perecederos, 
-cambio = 15;
+euro = 1.20; 
+cambio = prompt(typeof Number('Euro a cambiar'));
 dolar = cambio * euro;
 
 
-console.log(dolar);
+return dolar;
 }
 
 function esVocal(vocal, text)
@@ -90,7 +130,7 @@ function esVocal(vocal, text)
    // Si no es vocal, tambien debe retornar "Dato incorrecto".
    // Tu código:
 
-   vocal = [a,e,i,o,u]
+   vocal = {a,e,i,o,u}
 if (text === vocal)
 {
       console.log('Es vocal');
@@ -104,10 +144,9 @@ else
 // entrada 'Texto', string
 text = 'o';
 
-console.log(esVocal)
+
+return Bolean;
 }
-
-
 /*⚠️ NO MODIFIQUES NADA DEBAJO DE ESTO ⚠️*/
 module.exports = {
    esPositivo,
@@ -120,3 +159,6 @@ module.exports = {
    deEuroAdolar,
    esVocal,
 }
+
+</body>
+</html>

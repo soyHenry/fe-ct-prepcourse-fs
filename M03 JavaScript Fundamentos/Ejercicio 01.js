@@ -5,22 +5,23 @@
 // por el correspondiente.
 
 // Crea una variable de tipo string.
-const nuevoString = null;
+const nuevoString = "null";
 
 // Crea una variable de tipo number.
-const nuevoNumero = null;
+const nuevoNumero = 7;
 
 // Crea una variable de tipo boolean.
-const nuevoBoolean = null;
+const nuevoBoolean = 8 + 15 === 23;
 
 // Resuelve el siguiente problema matemático.
-const nuevaResta = 10 - null === 3;
+const nuevaResta = 10 - 2 === 8 ;
 
 // Resuelve el siguiente problema matemático.
-const nuevaMultiplicacion = 10 * null === 40;
+const nuevaMultiplicacion = 10 * 4 === 40;
 
 // Resuelve el siguiente problema matemático.
-const nuevoModulo = 21 % 5 === null;
+const nuevoModulo = 3 % 25 == 0.75;
+
 
 /*⚠️ NO MODIFIQUES NADA DEBAJO DE ESTO ⚠️*/
 module.exports = {
