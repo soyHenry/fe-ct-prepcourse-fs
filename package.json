@@ -1,15 +1,17 @@
 {
-   "name": "prepcourse",
-   "version": "3.0.0",
-   "description": "",
-   "main": "index.js",
-   "scripts": {
-      "test": "jest --collectCoverage=false"
-   },
-   "author": "Henry",
-   "license": "ISC",
-   "dependencies": {
-      "eslint": "^8.28.0",
-      "jest": "^29.3.1"
-   }
+  "name": "prepcourse",
+  "version": "3.0.0",
+  "description": "![HenryLogo](./Assets//logoBannerHenry.png)",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --collectCoverage=false"
+  },
+  "author": "Henry",
+  "license": "ISC",
+  "dependencies": {
+    "eslint": "^8.28.0",
+    "jest": "^29.3.1",
+    "Q": "^1.0.0"
+  },
+  "keywords": []
 }

@@ -6,7 +6,7 @@ const {
    nuevaResta,
    nuevaMultiplicacion,
    nuevoModulo,
-} = require('../Ejercicio 01');
+} = require('Q');
 
 const {
    devolverString,
