@@ -1,15 +1,16 @@
 {
-   "name": "prepcourse",
-   "version": "3.0.0",
-   "description": "",
-   "main": "index.js",
-   "scripts": {
-      "test": "jest --collectCoverage=false"
-   },
-   "author": "Henry",
-   "license": "ISC",
-   "dependencies": {
-      "eslint": "^8.28.0",
-      "jest": "^29.3.1"
-   }
+  "name": "prep",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^29.7.0"
+  },
+  "devDependencies": {},
+  "description": ""
 }
