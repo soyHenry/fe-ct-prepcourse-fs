@@ -70,7 +70,7 @@ function agregarNumeros(arrayOfNums) {
    suma = arrayOfNums.reduce(function(acc,element) {
       return acc + element;
    })
-   return suma
+   return suma;
 }
 
 function promedioResultadosTest(resultadosTest) {
@@ -84,7 +84,7 @@ function numeroMasGrande(arrayOfNums) {
    // El parámetro "arrayOfNums" es un arreglo de números.
    // Retornar el número más grande.
    // Tu código:
-   var max = arrayOfNums[0] ;
+   var max = arrayOfNums[0];
    for (var num of arrayOfNums) {
       if (max < num) {
          max = num ;
@@ -236,7 +236,7 @@ function continueStatement(num) {
          suma.push(suma[suma.length - 1] + 2);
       }
    }
-   return suma
+   return suma;
 }
 
 /*⚠️ NO MODIFIQUES NADA DEBAJO DE ESTO ⚠️*/
