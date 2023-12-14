@@ -1,7 +1,7 @@
-const redondearHaciaArriba = require('../ejercicios/37');
+const redondearNumero = require('../ejercicios/37');
 
-test('Debe devolver el número redondeado para arriba', function () {
-  expect(redondearHaciaArriba(1.5)).toBe(2);
-  expect(redondearHaciaArriba(2)).toBe(2);
-  expect(redondearHaciaArriba(0.1)).toBe(1);
+test('Debe devolver el número redondeado', function () {
+   expect(redondearNumero(1.5)).toBe(2);
+   expect(redondearNumero(2)).toBe(2);
+   expect(redondearNumero(0.1)).toBe(0);
 });
