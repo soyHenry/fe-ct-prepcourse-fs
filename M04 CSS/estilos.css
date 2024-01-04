@@ -1,0 +1,31 @@
+body
+{
+    background-color: black;
+}
+
+#principal
+{
+    font-size: 70px;
+}
+
+.title
+{
+    background-color: brown;
+    font-size: 40px;
+    color: crimson;
+}
+
+.wallpaper
+{
+    width: 700px;
+}
+
+hr
+{
+    border-color: black;
+}
+
+p
+{
+    color:rgb(233, 211, 211);
+}
