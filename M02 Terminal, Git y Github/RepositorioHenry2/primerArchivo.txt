@@ -1,0 +1,6 @@
+
+mework
+Jose Alberto Rojas Ruzza
+MEWORK 02 | COMANDOS - GIT - GITHUB
+
+praticando los comandos git add | git push.
