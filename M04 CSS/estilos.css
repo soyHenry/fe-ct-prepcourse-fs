@@ -1,0 +1,50 @@
+body{
+    background-color: rgb(201, 225, 237);
+}
+
+.title {
+    font: size 3em;
+    color: darkkhaki;
+}
+
+.logo{
+    width: 100px;
+}
+
+.card{
+    border: 2px solid black;
+    width: fit-content;
+    padding: 0px 1em 0px 1em;
+    border-radius: 15%;
+    transition: 1s;
+
+}
+
+.card :hover{
+    background-color: aquamarine;
+}
+
+#hola{
+    font-size: 4em;
+}
+
+#titulos{
+    border: 2px black;
+    width: 90vw;
+    margin: auto;
+    padding: 3em;
+    padding: 4em;
+}
+
+#cards-container{
+    background-color: bisque;
+    width: 85vw;
+    margin: auto;
+    margin-top: 1.5em;
+    border: 2px solid coral;
+    border-radius: 5%;
+    padding: 2em;
+    display: 	flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
