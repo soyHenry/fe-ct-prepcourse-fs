@@ -4,4 +4,11 @@ function encontrarElemento(elemento, array) {
   // Tu código:
 }
 
+for (i = 0; i < array.length ; i++){
+  if (array [i] === elemento){
+    return i;
+  }
+  return -1;
+}
+
 module.exports = encontrarElemento;
