@@ -3,6 +3,8 @@ function duplicarElementos(array) {
   // Devuelve un array con los duplicados.
   // Tu código:
 
+  console.log(array);
+
   for (var i = 0; i < array.length; i++){
     array[i] = array[i]*2; 
     }

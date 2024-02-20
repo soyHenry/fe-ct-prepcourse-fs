@@ -1,15 +1,16 @@
 function tablaDelSeis() {
-  var tabla = [];
-
-  // Iteramos desde 0 hasta 10, multiplicando cada número por 6
+  var tabla = []; // Arreglo para almacenar la tabla de multiplicar del 6
+  
+  // Iterar desde 0 hasta 10 (inclusive) para generar los resultados de la tabla de multiplicar
   for (var i = 0; i <= 10; i++) {
-    tabla.push(i * 6); // Agregamos el resultado al array 'tabla'
+    var resultado = 6 * i + 2; // Calcular el resultado de la multiplicación y sumar 2
+    
+    // Agregar el resultado al arreglo
+    tabla.push(resultado);
   }
-
-  return tabla;
+  
+  return tabla; // Devolver el arreglo con los resultados de la tabla de multiplicar del 6 incrementados en dos
 }
 
-// Ejemplo de uso:
-console.log(tablaDelSeis()); // Devuelve [0, 6, 12, 18, 24, 30, 36, 42, 48, 54, 60]
 
 module.exports = tablaDelSeis;

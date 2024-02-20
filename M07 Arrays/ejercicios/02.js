@@ -3,7 +3,9 @@ function ordenarArray(array) {
   // Devuelve el arreglo resultante.
   // Tu código:
 
+    console.log(array);
     return array.sort();
+    
 }
 
 module.exports = ordenarArray;
