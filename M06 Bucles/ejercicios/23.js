@@ -3,11 +3,11 @@ function doWhile(num) {
   // Retorna el valor final.
   // PISTA: Utiliza el bucle do-while.
   // Tu código:
-  var cont = 0;
+  var iterador = 0;
   do{
     num = num + 5;
     iterador ++;
-  } while (cont < 8);
+  } while (iterador < 8);
   return num;
 }
 

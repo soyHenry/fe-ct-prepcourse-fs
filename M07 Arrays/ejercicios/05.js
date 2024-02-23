@@ -1,8 +1,18 @@
 function obtenerPrimerStringLargo(array) {
   // Devuelve el primer string con más de 5 caracteres en el array.
   // Tu código:
+  
+  // var temporal = undefined;
 
-  console.log(obtenerPrimerStringLargo);
+  // for (var i=0 ; i < array.length ; i++){
+  //   if (array[i].length>=5){
+  //     temporal = array[i];
+  //     break;
+  // }
+  // }
+  // return temporal;
+
+  // console.log(obtenerPrimerStringLargo);
 
   var temporal = undefined;
 

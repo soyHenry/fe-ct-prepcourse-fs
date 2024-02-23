@@ -2,15 +2,12 @@ function invertirArray(array) {
   // Invierte el arreglo array recibido por argumento.
   // Tu código:
 
-  var palabra = array.replace(/ /g, "").toLowerCase();
-  var y = array -1;
+  var arrayNuevo = [];
  
-  for (var i = 0 ; i < palabra.length ; i++){
-    if (palabra[i] !== palabra[y])return true;
-    y--; 
-
-  }
-
+  for (var i = array.length -1; i >=0; i--){
+    arrayNuevo.push(array[i]);
+    }
+    return arrayNuevo;
 }
 
 module.exports = invertirArray;
