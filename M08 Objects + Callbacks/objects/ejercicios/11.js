@@ -3,6 +3,10 @@ function invocarMetodo(objeto, metodo) {
   // Esta propiedad contiene una función en su interior. Debes invocarla/ejecutarla.
   // NOTA: no necesitas retornar nada.
   // Tu código:
+  if (objeto.hasOwnProperty(metodo) && typeof objeto[metodo] === 'function') {
+    // Invocar la función correspondiente al método
+    objeto[metodo]();
+  }
 }
 
 module.exports = invocarMetodo;

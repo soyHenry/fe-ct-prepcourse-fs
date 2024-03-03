@@ -7,7 +7,6 @@ function operacionMatematica(num1, num2, cb) {
   var result = cb(num1, num2);
   return result;
 
-
 }
 
 module.exports = operacionMatematica;
