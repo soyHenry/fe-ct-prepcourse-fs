@@ -9,6 +9,14 @@ function agregarMetodoCalculoDescuento(objetoProducto) {
   // PorcentajeDeDescuento ---> 0.2
   // Precio final ---> 8
   // Tu código:
+
+  objetoProducto.calcularPrecioDescuento = function(){
+    return{
+      objetoProducto.precio -
+      objetoProducto.precio * objetoProducto.porcentajeDeDescuento
+    };
+  };
+  return objetoProducto;
 }
 
 module.exports = agregarMetodoCalculoDescuento;
