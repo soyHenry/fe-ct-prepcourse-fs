@@ -1,29 +1,29 @@
 const esNuloOIndefinido = require("../ejercicios/09");
 
-test("null should return true", () => {
+test('"null" debe retornar true', () => {
   expect(esNuloOIndefinido(null)).toBe(true);
 });
 
-test("undefined should return true", () => {
+test('"undefined" debe retornar true', () => {
   expect(esNuloOIndefinido(undefined)).toBe(true);
 });
 
-test("0 should return false", () => {
+test('"0" debe retornar false', () => {
   expect(esNuloOIndefinido(0)).toBe(false);
 });
 
-test("false should return false", () => {
+test('"false" debe retornar false', () => {
   expect(esNuloOIndefinido(false)).toBe(false);
 });
 
-test("an empty string should return false", () => {
+test('un string vacio debe retornar false', () => {
   expect(esNuloOIndefinido("")).toBe(false);
 });
 
-test("an object should return false", () => {
+test('un objeto debe retornar false', () => {
   expect(esNuloOIndefinido({})).toBe(false);
 });
 
-test("an array should return false", () => {
+test('un arreglo debe retornar false', () => {
   expect(esNuloOIndefinido([])).toBe(false);
 });

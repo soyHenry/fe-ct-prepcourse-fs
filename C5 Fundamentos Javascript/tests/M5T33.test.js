@@ -1,41 +1,8 @@
-const esNumeroPrimo = require("../ejercicios/33");
+const elevar = require("../ejercicios/33");
 
-test("2 es un número primo", () => {
-  expect(esNumeroPrimo(2)).toBe(true);
-});
-
-test("3 es un número primo", () => {
-  expect(esNumeroPrimo(3)).toBe(true);
-});
-
-test("4 no es un número primo", () => {
-  expect(esNumeroPrimo(4)).toBe(false);
-});
-
-test("5 es un número primo", () => {
-  expect(esNumeroPrimo(5)).toBe(true);
-});
-
-test("6 no es un número primo", () => {
-  expect(esNumeroPrimo(6)).toBe(false);
-});
-
-test("7 es un número primo", () => {
-  expect(esNumeroPrimo(7)).toBe(true);
-});
-
-test("8 no es un número primo", () => {
-  expect(esNumeroPrimo(8)).toBe(false);
-});
-
-test("9 no es un número primo", () => {
-  expect(esNumeroPrimo(9)).toBe(false);
-});
-
-test("10 no es un número primo", () => {
-  expect(esNumeroPrimo(10)).toBe(false);
-});
-
-test("11 es un número primo", () => {
-  expect(esNumeroPrimo(11)).toBe(true);
+test('Debe retornar el número elevado al exponente indicado', function () {
+  expect(elevar(2, 2)).toBe(4);
+  expect(elevar(2, 3)).toBe(8);
+  expect(elevar(0, 5)).toBe(0);
+  expect(elevar(10, 1)).toBe(10);
 });

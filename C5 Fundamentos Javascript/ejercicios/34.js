@@ -1,8 +1,12 @@
 // ⛔️ Recuerda que debes utilizar el objeto global "Math".
 
-function elevarAlCuadrado(num) {
-  // Retorna el valor de "num" elevado al cuadrado.
-  // Tu código:
+function redondearNumero(num) {
+   // La función recibe un argumento llamado num el cual es un numero.
+   // Debes redondear "num" al entero más próximo y retornarlo.
+   // Por ejemplo: 
+   // 1.5 ---> 2
+   // 0.1 ---> 0
+   // Tu código:
 }
 
-module.exports = elevarAlCuadrado;
+module.exports = redondearNumero;

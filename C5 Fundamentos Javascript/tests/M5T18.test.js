@@ -1,13 +1,19 @@
-const esImpar = require("../ejercicios/18");
+const esVocal = require('../ejercicios/18');
 
-test('Debe devolver True si el número es impar', function () {
-  expect(esImpar(6)).toBe(false);
-  expect(esImpar(7)).toBe(true);
-  expect(esImpar(0)).toBe(false);
+test('Debe retornar el string "Dato incorrecto", si el valor ingresado tiene más de una letra', function () {
+  expect(esVocal('la')).toBe('Dato incorrecto');
+  expect(esVocal('pero')).toBe('Dato incorrecto');
 });
 
-test('Debe devolver False si el número no es impar', function () {
-  expect(esImpar(6)).toBe(false);
-  expect(esImpar(7)).toBe(true);
-  expect(esImpar(0)).toBe(false);
+test('Debe retornar el string "Dato incorrecto", si el valor ingresado no es vocal', function () {
+  expect(esVocal('l')).toBe('Dato incorrecto');
+  expect(esVocal('p')).toBe('Dato incorrecto');
+});
+
+test('Debe retornar el string "Es vocal", si el valor ingresado lo es', function () {
+  expect(esVocal('a')).toBe('Es vocal');
+  expect(esVocal('e')).toBe('Es vocal');
+  expect(esVocal('i')).toBe('Es vocal');
+  expect(esVocal('o')).toBe('Es vocal');
+  expect(esVocal('u')).toBe('Es vocal');
 });

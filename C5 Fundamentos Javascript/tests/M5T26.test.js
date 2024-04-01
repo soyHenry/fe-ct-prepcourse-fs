@@ -1,6 +1,6 @@
-const agregarSimboloExclamacion = require('../ejercicios/26');
+const obtenerSaludo = require('../ejercicios/26');
 
-test('Debe agregar un signo de exclamacion al final del string', function () {
-  expect(agregarSimboloExclamacion('hello world')).toBe('hello world!');
-  expect(agregarSimboloExclamacion('Soy Henry')).toBe('Soy Henry!');
+test("Debe retornar el string 'Hola {name}!'", function () {
+  expect(obtenerSaludo('Martin')).toBe('Hola Martin!');
+  expect(obtenerSaludo('Antonio')).toBe('Hola Antonio!');
 });

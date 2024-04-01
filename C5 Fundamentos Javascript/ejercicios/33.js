@@ -1,11 +1,12 @@
-function esNumeroPrimo(numero) {
-  // La función recibe un argumento "numero".
-  // Determina si este corresponde a un número primo.
-  // De ser así, retorna true.
-  // De lo contrario, retorna false.
-  // IMPORTANTE: Recuerda que un número primo es aquel que
-  // solo es divisible por sí mismo y por 1.
+// ⛔️ Recuerda que debes utilizar el objeto global "Math".
+
+function elevar(num, exponent) {
+  // La función recibe dos argumentos llamados "num" y "exponent" los cuales son numeros.
+  // Debes Retorna el valor de "num" elevado al "exponent".
+  // Por ejemplo: 
+  // 2, 2 ---> 4
+  // 0, 5 ---> 0
   // Tu código:
 }
 
-module.exports = esNumeroPrimo;
+module.exports = elevar;

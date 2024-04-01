@@ -1,10 +1,10 @@
-const menosQueNoventa = require("../ejercicios/15");
+const esPar = require("../ejercicios/15");
 
-test('Debe devolver True si el número es menor a noventa', function () {
-  expect(menosQueNoventa(15)).toBe(true);
+test('Debe retornar True si el número es par', function () {
+  expect(esPar(6)).toBe(true);
+  expect(esPar(0)).toBe(true);
 });
 
-test('Debe devolver False si el número no es menor a noventa', function () {
-  expect(menosQueNoventa(90)).toBe(false);
-  expect(menosQueNoventa(100)).toBe(false);
+test('Debe retornar False si el número no es par', function () {
+  expect(esPar(7)).toBe(false);
 });
