@@ -1,19 +1,8 @@
-const esVocal = require('../ejercicios/20');
+const resta = require("../ejercicios/20");
 
-test('Debe devolver el string "Dato incorrecto", si el valor ingresado tiene más de una letra', function () {
-  expect(esVocal('la')).toBe('Dato incorrecto');
-  expect(esVocal('pero')).toBe('Dato incorrecto');
-});
-
-test('Debe devolver el string "Dato incorrecto", si el valor ingresado no es vocal', function () {
-  expect(esVocal('l')).toBe('Dato incorrecto');
-  expect(esVocal('p')).toBe('Dato incorrecto');
-});
-
-test('Debe devolver el string "Es vocal", si el valor ingresado lo es', function () {
-  expect(esVocal('a')).toBe('Es vocal');
-  expect(esVocal('e')).toBe('Es vocal');
-  expect(esVocal('i')).toBe('Es vocal');
-  expect(esVocal('o')).toBe('Es vocal');
-  expect(esVocal('u')).toBe('Es vocal');
+test('Debe retornar la resta de los dos argumentos', function () {
+  expect(resta(5, 5)).toBe(0);
+  expect(resta(-1, 5)).toBe(-6);
+  expect(resta(5, -5)).toBe(10);
+  expect(resta(0, 0)).toBe(0);
 });

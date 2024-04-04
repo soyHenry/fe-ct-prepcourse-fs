@@ -1,8 +1,7 @@
-const elevarAlCuadrado = require('../ejercicios/34');
+const redondearNumero = require('../ejercicios/34');
 
-test('Debe devolver el número elevado al cuadrado', function () {
-  expect(elevarAlCuadrado(6)).toBe(36);
-  expect(elevarAlCuadrado(7)).toBe(49);
-  expect(elevarAlCuadrado(0)).toBe(0);
-  expect(elevarAlCuadrado(-5)).toBe(25);
+test('Debe retornar el número redondeado', function () {
+   expect(redondearNumero(1.5)).toBe(2);
+   expect(redondearNumero(2)).toBe(2);
+   expect(redondearNumero(0.1)).toBe(0);
 });

@@ -1,10 +1,10 @@
-const sonIguales = require("../ejercicios/13");
+const menosQueNoventa = require("../ejercicios/13");
 
-test('Debe devolver True si los argumentos son iguales', function () {
-  expect(sonIguales(15, 15)).toBe(true);
-  expect(sonIguales('test', 'test')).toBe(true);
+test('Debe retornar True si el número es menor a noventa', function () {
+  expect(menosQueNoventa(15)).toBe(true);
 });
 
-test('Debe devolver False si los argumentos no son iguales', function () {
-  expect(sonIguales(90, 50)).toBe(false);
+test('Debe retornar False si el número no es menor a noventa', function () {
+  expect(menosQueNoventa(90)).toBe(false);
+  expect(menosQueNoventa(100)).toBe(false);
 });

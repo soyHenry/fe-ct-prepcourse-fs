@@ -1,8 +1,8 @@
 // ⛔️ Recuerda que debes utilizar el objeto global "Math".
 
-function elevar(num, exponent) {
-  // Retorna el valor de "num" elevado al exponente "exponent".
+function numeroRandom() {
+  // La función numeroRandom debe generar un número al azar entre 0 y 1 y retornarlo.
   // Tu código:
 }
 
-module.exports = elevar;
+module.exports = numeroRandom;

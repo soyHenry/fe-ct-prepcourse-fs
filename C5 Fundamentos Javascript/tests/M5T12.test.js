@@ -1,5 +1,9 @@
-const devolverString = require("../ejercicios/12");
+const tienenMismaLongitud = require('../ejercicios/12');
 
-test('Debe retornar el string provisto', function () {
-  expect(devolverString('Henry')).toBe('Henry');
+test('Debe retornar True si los strings tienen la misma longitud', function () {
+  expect(tienenMismaLongitud('javascript', 'bumfuzzled')).toBe(true);
+});
+
+test('Debe retornar False si los strings tienen diferente longitud', function () {
+  expect(tienenMismaLongitud('hi', 'there')).toBe(false);
 });

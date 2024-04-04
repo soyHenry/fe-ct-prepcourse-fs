@@ -1,8 +1,7 @@
-const resta = require("../ejercicios/22");
+const divide = require("../ejercicios/22");
 
-test('Debe retornar la resta de los dos argumentos', function () {
-  expect(resta(5, 5)).toBe(0);
-  expect(resta(-1, 5)).toBe(-6);
-  expect(resta(5, -5)).toBe(10);
-  expect(resta(0, 0)).toBe(0);
+test('Debe retornar la division de los dos argumentos', function () {
+  expect(divide(5, 5)).toBe(1);
+  expect(divide(10, 5)).toBe(2);
+  expect(divide(11, 2)).toBe(5.5);
 });

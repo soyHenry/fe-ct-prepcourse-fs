@@ -1,7 +1,7 @@
-const multiplica = require('../ejercicios/23');
+const obtenerResto = require('../ejercicios/23');
 
-test('Debe retornar el producto de los dos argumentos', function () {
-  expect(multiplica(5, 5)).toBe(25);
-  expect(multiplica(10, -5)).toBe(-50);
-  expect(multiplica(11, 0)).toBe(0);
+test('Debe retornar el resto de dividir x sobre y', function () {
+  expect(obtenerResto(15, 5)).toBe(0);
+  expect(obtenerResto(21, 5)).toBe(1);
+  expect(obtenerResto(22, 5)).toBe(2);
 });

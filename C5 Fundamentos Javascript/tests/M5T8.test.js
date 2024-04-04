@@ -1,7 +1,7 @@
 const esNumeroEntero = require("../ejercicios/08");
 
 describe("esNumeroEntero", () => {
-  it("should return true for integer numbers", () => {
+  it("Debe retornar true para numeros enteros", () => {
     expect(esNumeroEntero(0)).toBe(true);
     expect(esNumeroEntero(1)).toBe(true);
     expect(esNumeroEntero(-1)).toBe(true);
@@ -9,7 +9,7 @@ describe("esNumeroEntero", () => {
     expect(esNumeroEntero(1000000)).toBe(true);
   });
 
-  it("should return false for non-integer numbers", () => {
+  it("Debe retornar false para numeros que no sean enteros", () => {
     expect(esNumeroEntero(0.5)).toBe(false);
     expect(esNumeroEntero(1.2)).toBe(false);
     expect(esNumeroEntero(-3.14)).toBe(false);
@@ -17,7 +17,7 @@ describe("esNumeroEntero", () => {
     expect(esNumeroEntero(1000000.01)).toBe(false);
   });
 
-  it("should return false for non-number values", () => {
+  it("Debe retornar false para valores que no sean numeros", () => {
     expect(esNumeroEntero("42")).toBe(false);
     expect(esNumeroEntero(NaN)).toBe(false);
     expect(esNumeroEntero(undefined)).toBe(false);

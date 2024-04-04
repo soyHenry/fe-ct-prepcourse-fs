@@ -1,7 +1,7 @@
-const deEuroAdolar = require('../ejercicios/32');
+const elevarAlCubo = require('../ejercicios/32');
 
-test('Debe retornar el valor correcto de euro a dolar', function () {
-  expect(deEuroAdolar(100)).toBe(120);
-  expect(deEuroAdolar(200)).toBe(240);
-  expect(deEuroAdolar(50)).toBe(60);
+test('Debe retornar el número elevado al cubo', function () {
+  expect(elevarAlCubo(3)).toBe(27);
+  expect(elevarAlCubo(0)).toBe(0);
+  expect(elevarAlCubo(-5)).toBe(-125);
 });
