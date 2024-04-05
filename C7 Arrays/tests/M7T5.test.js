@@ -1,4 +1,4 @@
-const agregarItemAlComienzoDelArray = require('../ejercicios/04');
+const agregarItemAlComienzoDelArray = require('../ejercicios/05');
 
 test('Debe retornar el arreglo con el elemento agregado al comienzo', function () {
    expect(agregarItemAlComienzoDelArray([10, 10, 16, 12], 10)).toEqual([

@@ -1,4 +1,4 @@
-const agregarItemAlFinalDelArray = require('../ejercicios/03');
+const agregarItemAlFinalDelArray = require('../ejercicios/04');
 
 test('Debe retornar el arreglo con el elemento agregado al final', function () {
    expect(agregarItemAlFinalDelArray([10, 10, 16, 12], 10)).toEqual([
