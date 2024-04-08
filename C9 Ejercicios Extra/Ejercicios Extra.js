@@ -1,5 +1,31 @@
 /*⚠️ NO MODIFIQUES EL NOMBRE DE LAS DECLARACIONES ⚠️*/
 
+function esFechaValida(fecha) {
+  // La función recibe un argumento "fecha".
+  // Comprueba si este corresponde a una fecha válida.
+  // Si es así, retorna true, sino retorna false.
+  // Tu código:
+}
+
+function esMayorDeEdad(fechaNacimiento) {
+  // La función recibe un argumento "fechaNacimiento" correspondiente a la fecha
+  // de nacimiento de una persona.
+  // Determina si esta persona es mayor de edad (tiene 18 años o más).
+  // Devuelve true si lo es, caso contrario, retorna false.
+  // PISTA: Investiga el método getFullYear() de la clase Date para obtener el año actual.
+  // Tu código:
+}
+
+function esAnagrama(str1, str2) {
+  // La función recibe dos argumentos "str1" y "str2" que son strings.
+  // Determina si los dos strings son anagramas.
+  // Devuelve true de ser así, sino retorna false.
+  // IMPORTANTE: Un anagrama es una palabra que se forma
+  // con las mismas letras que otra, pero en orden diferente.
+  // Tu código:
+}
+
+
 function deObjetoAarray(objeto) {
   // Recibes un objeto. Tendrás que crear un arreglo de arreglos.
   // Cada elemento del arreglo padre será un nuevo arreglo que contendrá dos elementos.
@@ -62,6 +88,8 @@ function buscoInterseccion(array1, array2) {
 
 /*⚠️ NO MODIFIQUES NADA DEBAJO DE ESTO ⚠️*/
 module.exports = {
+  esFechaValida,
+  esMayorDeEdad,
   deObjetoAarray,
   numberOfCharacters,
   capToFront,
@@ -70,4 +98,5 @@ module.exports = {
   deleteAbc,
   sortArray,
   buscoInterseccion,
+  esAnagrama
 };
