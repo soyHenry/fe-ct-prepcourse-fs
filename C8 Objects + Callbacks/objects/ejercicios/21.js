@@ -1,9 +1,10 @@
 function agregarMetodoCalculoDescuento(objetoProducto) {
   // Agrega una propiedad al "objetoProducto" con el nombre "calcularPrecioDescuento".
-  // Esta propiedad debe ser una función que multiplique el precio del producto por el porcentajeDeDescuento.
+  // Esta propiedad debe ser una función que calcule y retorne el precio de descuento del producto.
   // El "objetoProducto" posee una propiedad "precio" y una propiedad "porcentajeDeDescuento".
-  // Luego debes restar del precio total del producto ese valor de descuento.
-  // Retornar el precio final.
+  // Debes restar del "precio" del producto el valor de descuento 
+  // El descuento lo puedes obtener de la siguiente manera: multiplicar el "precio" por el "porcentajeDeDescuento".
+  // Por ultimo, retornar el objeto modificado. 
   // Ejemplo:
   // Precio ---> 10
   // PorcentajeDeDescuento ---> 0.2

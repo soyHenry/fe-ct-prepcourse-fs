@@ -1,5 +1,7 @@
 /* eslint-disable no-undef */
 const {
+   esFechaValida,
+   esMayorDeEdad,
    deObjetoAarray,
    numberOfCharacters,
    capToFront,
@@ -8,9 +10,82 @@ const {
    deleteAbc,
    sortArray,
    buscoInterseccion,
+   esAnagrama
 } = require('../Ejercicios Extra');
 
 describe('EJERCICIOS EXTRA', function () {
+
+   describe("esFechaValida", () => {
+      it("Debe retornar true para una fecha valida", () => {
+         expect(esFechaValida(new Date("2022-01-01"))).toBe(true);
+      });
+
+      it("Debe retornar false para una fecha invalida", () => {
+         expect(esFechaValida("2022-01-01")).toBe(false);
+      });
+
+      it("Debe retornar false para un objeto de tipo fecha invalido", () => {
+         expect(esFechaValida(new Date("invalid"))).toBe(false);
+      });
+   });
+
+   describe("esMayorDeEdad", () => {
+      it("Debe retornar true si la persona tiene 18 años cumplidos", () => {
+         const fechaNacimiento = new Date("2003-01-01");
+         expect(esMayorDeEdad(fechaNacimiento)).toBe(true);
+      });
+      
+      it("Debe retornar false si la persona es Menor de edad", () => {
+      const fechaNacimiento = new Date("2010-01-01");
+      expect(esMayorDeEdad(fechaNacimiento)).toBe(false);
+      });
+      
+      it("Debe retornar true si la persona es Mayor de edad por un día", () => {
+      const fechaNacimiento = new Date("2003-12-31");
+      expect(esMayorDeEdad(fechaNacimiento)).toBe(true);
+      });
+      
+      it("Debe retornar false si la Fecha de nacimiento es del futuro", () => {
+      const fechaNacimiento = new Date("2025-01-01");
+      expect(esMayorDeEdad(fechaNacimiento)).toBe(false);
+      });
+   });
+
+   describe("esAnagrama", () => {
+      it('anagrama de palabras iguales', () => {
+         expect(esAnagrama('hola', 'hola')).toBe(true);
+      });
+      
+      it('anagrama de palabras diferentes', () => {
+         expect(esAnagrama('hola', 'aloh')).toBe(true);
+      });
+      
+      it('palabras con diferente longitud', () => {
+         expect(esAnagrama('hola', 'holaa')).toBe(false);
+      });
+      
+      it('palabras con diferente cantidad de letras iguales', () => {
+         expect(esAnagrama('hola', 'holb')).toBe(false);
+      });
+      
+      it('palabras con espacios', () => {
+         expect(esAnagrama('hola mundo', 'mundo hola')).toBe(true);
+      });
+      
+      it('palabras con mayúsculas y minúsculas', () => {
+         expect(esAnagrama('Hola', 'aloh')).toBe(true);
+      });
+      
+      it('palabras con caracteres especiales', () => {
+         expect(esAnagrama('hola!', '!aloh')).toBe(true);
+      });
+      
+      it('palabras vacías', () => {
+         expect(esAnagrama('', '')).toBe(true);
+      });
+   });
+
+
    describe('deObjetoAarray(objeto)', function () {
       it('Debe retornar un arreglo donde cada sub-arreglo contiene el par clave:valor del objeto', function () {
          expect(deObjetoAarray({ x: 1, y: 2 })).toEqual([
