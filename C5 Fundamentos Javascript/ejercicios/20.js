@@ -1,8 +1,10 @@
-function esVocal(letra) {
-  // Escribe una función que reciba una letra y, si es una vocal, muestre el mensaje “Es vocal”.
-  // Si el usuario ingresa un string de más de un caracter, debes retornar el mensaje: "Dato incorrecto".
-  // Si no es vocal, tambien debe retornar "Dato incorrecto".
+function resta(x, y) {
+  // La función recibe dos argumentos llamados "x" e "y" que son números.
+  // Retorna el resultado de la resta de estos argumentos.
+  // Por ejemplo: 
+  // 10, 5 ---> 5
+  // 5, 5 ---> 0
   // Tu código:
 }
 
-module.exports = esVocal;
+module.exports = resta;

@@ -1,4 +1,4 @@
-const invertirTexto = require('../ejercicios/24');
+const invertirTexto = require('../ejercicios/31');
 
 test('Invertir texto con una palabra', () => {
   expect(invertirTexto('hola')).toBe('aloh');

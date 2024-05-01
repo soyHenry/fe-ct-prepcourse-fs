@@ -1,7 +1,6 @@
-const divide = require("../ejercicios/24");
+const agregarSimboloExclamacion = require('../ejercicios/24');
 
-test('Debe retornar la division de los dos argumentos', function () {
-  expect(divide(5, 5)).toBe(1);
-  expect(divide(10, 5)).toBe(2);
-  expect(divide(11, 2)).toBe(5.5);
+test('Debe agregar un signo de exclamacion al final del string y retornarlo', function () {
+  expect(agregarSimboloExclamacion('hello world')).toBe('hello world!');
+  expect(agregarSimboloExclamacion('Soy Henry')).toBe('Soy Henry!');
 });

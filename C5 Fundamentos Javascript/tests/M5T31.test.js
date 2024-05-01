@@ -1,7 +1,8 @@
-const areaDelTriangulo = require('../ejercicios/31');
+const elevarAlCuadrado = require('../ejercicios/31');
 
-test('Debe retornar el área correcta del triángulo', function () {
-  expect(areaDelTriangulo(10, 5)).toBe(25);
-  expect(areaDelTriangulo(20, 10)).toBe(100);
-  expect(areaDelTriangulo(0, 10)).toBe(0);
+test('Debe retornar el número elevado al cuadrado', function () {
+  expect(elevarAlCuadrado(6)).toBe(36);
+  expect(elevarAlCuadrado(7)).toBe(49);
+  expect(elevarAlCuadrado(0)).toBe(0);
+  expect(elevarAlCuadrado(-5)).toBe(25);
 });

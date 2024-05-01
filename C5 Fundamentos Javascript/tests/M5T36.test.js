@@ -1,8 +1,11 @@
-const elevar = require("../ejercicios/36");
+const numeroRandom = require('../ejercicios/36');
 
-test('Debe devolver el número elevado al exponente indicado', function () {
-  expect(elevar(2, 2)).toBe(4);
-  expect(elevar(2, 3)).toBe(8);
-  expect(elevar(0, 5)).toBe(0);
-  expect(elevar(10, 1)).toBe(10);
+test('Debe retornar un número entre 0 y 1', function () {
+   expect(typeof numeroRandom()).toBe('number');
+   expect(numeroRandom()).toBeGreaterThanOrEqual(0);
+   expect(numeroRandom()).toBeLessThan(1);
+});
+
+test('Debe retornar un número random', function () {
+   expect(numeroRandom()).not.toBe(numeroRandom());
 });

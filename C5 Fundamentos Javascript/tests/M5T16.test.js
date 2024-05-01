@@ -1,13 +1,13 @@
-const mayorQueCincuenta = require("../ejercicios/16");
+const esImpar = require("../ejercicios/16");
 
-test('Debe devolver True si el número es mayor a cincuenta', function () {
-  expect(mayorQueCincuenta(15)).toBe(false);
-  expect(mayorQueCincuenta(50)).toBe(false);
-  expect(mayorQueCincuenta(60)).toBe(true);
+test('Debe retornar True si el número es impar', function () {
+  expect(esImpar(6)).toBe(false);
+  expect(esImpar(7)).toBe(true);
+  expect(esImpar(0)).toBe(false);
 });
 
-test('Debe devolver False si el número no es mayor a cincuenta', function () {
-  expect(mayorQueCincuenta(15)).toBe(false);
-  expect(mayorQueCincuenta(50)).toBe(false);
-  expect(mayorQueCincuenta(60)).toBe(true);
+test('Debe retornar False si el número no es impar', function () {
+  expect(esImpar(6)).toBe(false);
+  expect(esImpar(7)).toBe(true);
+  expect(esImpar(0)).toBe(false);
 });

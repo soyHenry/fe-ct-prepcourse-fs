@@ -1,7 +1,6 @@
-const obtenerResto = require('../ejercicios/25');
+const combinarNombres = require("../ejercicios/25");
 
-test('Debe retornar el resto de dividir x sobre y', function () {
-  expect(obtenerResto(15, 5)).toBe(0);
-  expect(obtenerResto(21, 5)).toBe(1);
-  expect(obtenerResto(22, 5)).toBe(2);
+test('Debe retornar los strings combinados con un espacio en el medio', function () {
+  expect(combinarNombres('hello', 'world')).toBe('hello world');
+  expect(combinarNombres('Soy', 'Henry')).toBe('Soy Henry');
 });

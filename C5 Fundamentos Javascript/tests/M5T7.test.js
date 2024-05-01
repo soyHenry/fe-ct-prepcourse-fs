@@ -1,33 +1,33 @@
 const esTipoDato = require('../ejercicios/07');
 
-test('typeof 1 should return "number"', () => {
+test('El tipo de dato ( typeof ) de "1" debe retornar "number"', () => {
   expect(esTipoDato(1)).toBe('number');
 });
 
-test('typeof "hello" should return "string"', () => {
+test('El tipo de dato ( typeof ) de "hello" debe retornar "string"', () => {
   expect(esTipoDato('hello')).toBe('string');
 });
 
-test('typeof true should return "boolean"', () => {
+test('El tipo de dato ( typeof ) de "true" debe retornar "boolean"', () => {
   expect(esTipoDato(true)).toBe('boolean');
 });
 
-test('typeof {} should return "object"', () => {
+test('El tipo de dato ( typeof ) de "{}" debe retornar "object"', () => {
   expect(esTipoDato({})).toBe('object');
 });
 
-test('typeof [] should return "object"', () => {
+test('El tipo de dato ( typeof ) de "[]" debe retornar "object"', () => {
   expect(esTipoDato([])).toBe('object');
 });
 
-test('typeof null should return "object"', () => {
+test('El tipo de dato ( typeof ) de "null" debe retornar "object"', () => {
   expect(esTipoDato(null)).toBe('object');
 });
 
-test('typeof undefined should return "undefined"', () => {
+test('El tipo de dato ( typeof ) de "undefined" debe retornar "undefined"', () => {
   expect(esTipoDato(undefined)).toBe('undefined');
 });
 
-test('typeof function(){} should return "function"', () => {
+test('El tipo de dato ( typeof ) de "function(){}" debe retornar "function"', () => {
   expect(esTipoDato(function () {})).toBe('function');
 });

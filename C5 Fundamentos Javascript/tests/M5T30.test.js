@@ -1,7 +1,7 @@
-const retornarPerimetro = require('../ejercicios/30');
+const deEuroAdolar = require('../ejercicios/30');
 
-test('Debe retornar el perímetro correcto del cuadrado', function () {
-   expect(retornarPerimetro(2)).toBe(8);
-   expect(retornarPerimetro(8)).toBe(32);
-   expect(retornarPerimetro(0)).toBe(0);
+test('Debe retornar el valor correcto de euro a dolar', function () {
+  expect(deEuroAdolar(100)).toBe(120);
+  expect(deEuroAdolar(200)).toBe(240);
+  expect(deEuroAdolar(50)).toBe(60);
 });

@@ -1,4 +1,4 @@
-const esPalindromo = require('../ejercicios/25');
+const esPalindromo = require('../ejercicios/32');
 
 test("esPalindromo devuelve true para 'ana'", () => {
    expect(esPalindromo('ana')).toBe(true);

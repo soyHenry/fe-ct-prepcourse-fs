@@ -1,15 +1,9 @@
-const esFechaValida = require("../ejercicios/10");
+const devolverString = require("../ejercicios/10");
 
-describe("esFechaValida", () => {
-  test("should return true for a valid date", () => {
-    expect(esFechaValida(new Date("2022-01-01"))).toBe(true);
-  });
+test('Debe retornar el string provisto "Henry"', function () {
+  expect(devolverString('Henry')).toBe('Henry');
+});
 
-  test("should return false for an invalid date", () => {
-    expect(esFechaValida("2022-01-01")).toBe(false);
-  });
-
-  test("should return false for an invalid date object", () => {
-    expect(esFechaValida(new Date("invalid"))).toBe(false);
-  });
+test('Debe retornar el string provisto "hola mundo"', function () {
+  expect(devolverString('hola mundo')).toBe('hola mundo');
 });

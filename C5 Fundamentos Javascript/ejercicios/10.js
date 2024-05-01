@@ -1,8 +1,11 @@
-function esFechaValida(fecha) {
-  // La función recibe un argumento "fecha".
-  // Comprueba si este corresponde a una fecha válida.
-  // Si es así, retorna true, sino retorna false.
+function devolverString(string) {
+  // La función recibe un argumento llamado string.
+  // Debe retornar dicho string.
+  // Por ejemplo: 
+  // "texto" ---> "texto" 
+  // "hola mundo" ---> "hola mundo" 
+  // "SoyHenry" ---> "SoyHenry" 
   // Tu código:
 }
 
-module.exports = esFechaValida;
+module.exports = devolverString;
