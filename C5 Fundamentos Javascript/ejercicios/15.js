@@ -1,4 +1,6 @@
 function esPar(num) {
+
+  return num % 2 === 0; /*Devuelve el resto de la division*/
   // La función recibe un argumento llamado num.
   // Retorna true si el argumento "num" es par.
   // De lo contrario, retorna false.
@@ -9,3 +11,5 @@ function esPar(num) {
 }
 
 module.exports = esPar;
+
+console.log (esPar(3));

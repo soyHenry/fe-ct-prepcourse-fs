@@ -1,4 +1,12 @@
 function colors(color) {
+  switch (color) {
+    case "blue": return "This is "+color;
+    case "red": return "This is "+color;
+    case "green": return "This is "+color;
+    case "orange": return "This is "+color;
+    default: return "Color not found";
+
+  }
   // La función recibe un color. Retorna el string correspondiente:
   // En caso que el color recibido sea "blue"   --> "This is blue".
   // En caso que el color recibido sea "red"    --> "This is red".
@@ -10,3 +18,4 @@ function colors(color) {
 }
 
 module.exports = colors;
+console.log  (colors("green"));

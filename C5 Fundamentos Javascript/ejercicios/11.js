@@ -1,4 +1,5 @@
 function sonIguales(x, y) {
+  return x === y;
   // La función recibe dos argumentos llamados "x" e "y".
   // Retorna true si "x" e "y" son iguales.
   // De lo contrario, retorna false.
@@ -9,3 +10,4 @@ function sonIguales(x, y) {
 }
 
 module.exports = sonIguales;
+console.log (sonIguales(1,1));

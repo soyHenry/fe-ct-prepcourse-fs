@@ -1,0 +1,23 @@
+var primerobjeto = {
+
+   prop1: "Hola",
+   prop2: "chau",
+   propiedadprueba: "Encontrado",
+
+}
+
+const obtenerValorPropiedad = (objeto, propiedad) => {
+   
+   // Recibe un objeto y el nombre de una propiedad.
+   // Devuelve el valor de esta propiedad.
+   // Tu código:
+   
+   a = objeto.hasOwnProperty (propiedad)
+
+   if (a) return objeto[propiedad]
+   else return "propuiedad no encontrada"
+   
+};
+
+console.log (obtenerValorPropiedad (primerobjeto, "propiedadprueba"))
+module.exports = obtenerValorPropiedad;

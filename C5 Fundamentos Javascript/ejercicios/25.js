@@ -1,4 +1,6 @@
 function combinarNombres(nombre, apellido) {
+
+  return (sumastr = nombre+" "+apellido);
   // La función recibe dos argumentos llamados "nombre" y "apellido" los cuales son string.
   // Retorna "nombre" y "apellido" combinados en un mismo string pero separados por un espacio.
   // Por ejemplo: 
@@ -7,3 +9,5 @@ function combinarNombres(nombre, apellido) {
 }
 
 module.exports = combinarNombres;
+console.log( (combinarNombres ("Matias", "Birba")));
+

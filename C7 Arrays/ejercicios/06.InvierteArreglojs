@@ -1,0 +1,20 @@
+array = ["A","B","C","c"];
+console.log (array[1]);
+
+function invertirArray(array) {
+ let arrayinverso =[];
+
+  for (let i=0; i<array.length; i++){
+      // arrayinverso.unshift (array[i]);
+    
+      arrayinverso[i] = array[array.length-i-1]
+
+    }
+
+return arrayinverso;
+  // Invierte el arreglo array recibido por argumento.
+  // Tu código:
+}
+
+module.exports = invertirArray;
+console.log (invertirArray(array));

@@ -1,0 +1,31 @@
+
+var objeto = {
+  prop1: "valor1",
+  prop2: "valor2",
+  prop3: function (){    
+  console.log ("Metodo invocado")
+  },
+}
+
+function invocarMetodo(objeto, metodo) {
+  // Verificamos si el objeto tiene la propiedad que corresponde al nombre del método
+  if (objeto[metodo] && typeof objeto[metodo] === "function") {
+    objeto[metodo](); // Invocamos el método
+  } else {
+    console.log("El método no existe en el objeto");
+  }
+}
+
+invocarMetodo(objeto, "prop3");  // Debería imprimir "¡Método invocado!" en la consola
+invocarMetodo(objeto, "prop4");  // Debería imprimir "El método no existe en el objeto" en la consola
+
+// function invocarMetodo(objeto, metodo) {
+
+
+  // El parámetro "metodo" es un string que coincide con el nombre de una propiedad del objeto recibido.
+  // Esta propiedad contiene una función en su interior. Debes invocarla/ejecutarla.
+  // NOTA: no necesitas retornar nada.
+  // Tu código:
+// }
+
+module.exports = invocarMetodo;

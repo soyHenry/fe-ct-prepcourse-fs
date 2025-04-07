@@ -1,8 +1,36 @@
+
+
 function breakStatement(num) {
-  // Iterar en un bucle aumentando en 2 el número num recibido hasta un límite de 10 veces.
-  // Guardar cada nuevo valor en un arreglo y retórnarlo.
-  // Si en algún momento el valor de la suma y la cantidad de iteraciones coinciden, debe interrumpirse la ejecución y retornar el string: "Se interrumpió la ejecución".
-  // Tu código:
+  var nuevonum = num;  // Empezamos con el número dado
+  var nuevoarray = [];
+  
+  for (var i = 0; i < 10; i++) {
+    nuevonum += 2;  // Sumamos 2 al número en cada iteración
+    nuevoarray[i] = nuevonum;  // Guardamos el valor en el arreglo
+    
+    // Comprobamos si el valor de nuevonum es igual a la cantidad de iteraciones
+    if (i === nuevonum) {
+      return "Se interrumpió la ejecución";  // Interrumpimos y retornamos el mensaje
+    }
+  }
+  
+  return nuevoarray;  // Si no se interrumpió, retornamos el arreglo completo
 }
 
 module.exports = breakStatement;
+console.log(breakStatement(0));  // Prueba con el número -20
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

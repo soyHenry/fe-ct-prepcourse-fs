@@ -1,4 +1,6 @@
 function multiplica(x, y) {
+  var multiplicar = x*y;
+  return multiplicar;
   // La función recibe dos argumentos llamados "x" e "y" que son números.
   // Retorna el resultado de la multiplicacion de estos argumentos.
   // Por ejemplo: 
@@ -8,3 +10,4 @@ function multiplica(x, y) {
 }
 
 module.exports = multiplica;
+console.log (multiplica(2,2));

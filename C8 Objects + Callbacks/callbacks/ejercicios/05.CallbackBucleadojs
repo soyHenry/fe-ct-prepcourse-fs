@@ -1,0 +1,25 @@
+
+arreglo = [1,2,3,4,5,6,7,8,9]
+
+function forEach(array, cb) {
+
+  var arreglofinal = []
+for (i=0; i<array.length; i++){
+    cb (array, arreglofinal)
+}
+return arreglofinal
+
+  // Recibes un arreglo y un callback.
+  // Itera sobre el arreglo y por cada elemento iterado, ejecuta el callback con este valor.
+  // Tu código:
+}
+
+
+function cbforeach (ele, arr){
+
+  return arr.push (ele)
+}
+
+console.log (forEach (arreglo, cbforeach))
+
+module.exports = forEach;

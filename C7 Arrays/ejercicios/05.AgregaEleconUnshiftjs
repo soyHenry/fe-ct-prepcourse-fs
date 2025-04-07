@@ -1,7 +1,13 @@
+array = [1,2,3,"4"];
 function agregarItemAlComienzoDelArray(array, elemento) {
+for (i=0; i<=3;i++){
+  array.unshift (elemento);
+}
+  return array;
   // Agrega el "elemento" al comienzo del arreglo recibido.
   // Retorna el arreglo.
   // Tu código:
 }
 
 module.exports = agregarItemAlComienzoDelArray;
+console.log (agregarItemAlComienzoDelArray(array, "chau"))

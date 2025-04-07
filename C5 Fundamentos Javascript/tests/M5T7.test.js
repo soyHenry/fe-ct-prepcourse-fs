@@ -1,4 +1,4 @@
-const esTipoDato = require('../ejercicios/07');
+const esTipoDato = require ('../ejercicios/07');
 
 test('El tipo de dato ( typeof ) de "1" debe retornar "number"', () => {
   expect(esTipoDato(1)).toBe('number');

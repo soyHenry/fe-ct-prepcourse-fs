@@ -1,4 +1,11 @@
+
+var array = [1,"hola",2,3,4,"Chau"]
+
 function esArrayNoVacio(arr) {
+
+  if (Array.isArray (arr) && arr.length !==0)
+    return true
+  else return false
   // La función recibe un argumento "arr".
   // Comprueba si este argumento es un array y si tiene al menos un elemento.
   // Si es así, retorna true, de lo contrario, retorna false.
@@ -6,3 +13,4 @@ function esArrayNoVacio(arr) {
 }
 
 module.exports = esArrayNoVacio;
+console.log(esArrayNoVacio(array))
