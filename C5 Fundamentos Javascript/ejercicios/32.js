@@ -7,6 +7,8 @@ function elevarAlCubo(num) {
   // 3 ---> 27
   // 0 ---> 0
   // Tu código:
+    let newStr = Math.pow(num, 3)
+  return newStr;
 }
 
 module.exports = elevarAlCubo;
