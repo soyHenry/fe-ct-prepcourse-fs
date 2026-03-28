@@ -1,9 +1,9 @@
 function agregarPropiedad(objeto, propiedad) {
-  // Recibirás un objeto por parámetro.
-  // Debes agregarle una propiedad con el nombre recibido por parámetro.
-  // Esta propiedad será igual al valor `null`.
-  // Retornar el objeto.
-  // Tu código:
+  // Debes agregarle una propiedad con el nombre recibido por parametro.
+  // Esta propiedad sera igual al valor `null`.
+  // Tu codigo:
+  objeto[propiedad] = null;
+  return objeto;
 }
 
 module.exports = agregarPropiedad;

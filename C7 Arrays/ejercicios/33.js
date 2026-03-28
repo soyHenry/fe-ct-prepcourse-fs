@@ -1,12 +1,19 @@
 function combine(str1, str2, str3) {
-  // Esta función debe combinar de forma alternada cada caracter de cada string.
-  // La función recibe 3 argumentos. Solo debe contabilizar aquellos que NO esten vacíos.
-  // Los strings pueden tener cualquier tamaño.
-  // EJEMPLOS
-  // combine("abc", "", "123") == "a1b2c3"
-  // combine("abc", "12345", "") == "a1b2c345"
-  // combine("abc", "12345", "67") == "a16b27c345"
-  // Tu código:
+  // Esta funcion debe combinar de forma alternada cada caracter de cada string.
+  // Solo debe contabilizar aquellos que no esten vacios.
+  // Tu codigo:
+  const strings = [str1, str2, str3].filter((str) => str !== '');
+  let resultado = '';
+  let indice = 0;
+
+  while (strings.some((str) => indice < str.length)) {
+    for (let i = 0; i < strings.length; i += 1) {
+      if (indice < strings[i].length) resultado += strings[i][indice];
+    }
+    indice += 1;
+  }
+
+  return resultado;
 }
 
 module.exports = combine;

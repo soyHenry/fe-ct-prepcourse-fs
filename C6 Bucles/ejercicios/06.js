@@ -1,7 +1,8 @@
 function tieneTresDigitos(num) {
-  // Si el número recibido tiene tres dígitos, retorna true.
+  // Si el numero recibido tiene tres digitos, retorna true.
   // Caso contrario, retorna false.
-  // Tu código:
+  // Tu codigo:
+  return Math.abs(num) >= 100 && Math.abs(num) <= 999;
 }
 
 module.exports = tieneTresDigitos;

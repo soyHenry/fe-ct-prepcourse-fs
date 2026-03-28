@@ -1,7 +1,8 @@
 function convertirStringAMayusculas(array) {
-  // Convierte a mayúsculas todos los strings del array.
+  // Convierte a mayusculas todos los strings del array.
   // Retorna el arreglo resultante.
-  // Tu código:
+  // Tu codigo:
+  return array.map((texto) => texto.toUpperCase());
 }
 
 module.exports = convertirStringAMayusculas;

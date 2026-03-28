@@ -1,8 +1,11 @@
 function map(array, cb) {
-  // Itera sobre el arreglo y por cada elemento, pasárselo como argumento al callback.
-  // Tiene que guardar el resultado devuelto por el callback en cada elemento dentro de un nuevo arreglo.
-  // Retorna el nuevo arreglo.
-  // Tu código:
+  // Itera sobre el arreglo y guarda el resultado del callback en un nuevo arreglo.
+  // Tu codigo:
+  const nuevoArray = [];
+  for (let i = 0; i < array.length; i += 1) {
+    nuevoArray.push(cb(array[i]));
+  }
+  return nuevoArray;
 }
 
 module.exports = map;

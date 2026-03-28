@@ -1,10 +1,8 @@
 function divide(x, y) {
-  // La función recibe dos argumentos llamados "x" e "y" que son números.
+  // La funcion recibe dos argumentos llamados "x" e "y" que son numeros.
   // Retorna el resultado de la division de estos argumentos.
-  // Por ejemplo: 
-  // 10, 5 ---> 2
-  // 5, 5 ---> 1
-  // Tu código:
+  // Tu codigo:
+  return x / y;
 }
 
 module.exports = divide;

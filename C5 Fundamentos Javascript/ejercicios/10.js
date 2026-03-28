@@ -1,11 +1,8 @@
 function devolverString(string) {
-  // La función recibe un argumento llamado string.
+  // La funcion recibe un argumento llamado string.
   // Debe retornar dicho string.
-  // Por ejemplo: 
-  // "texto" ---> "texto" 
-  // "hola mundo" ---> "hola mundo" 
-  // "SoyHenry" ---> "SoyHenry" 
-  // Tu código:
+  // Tu codigo:
+  return string;
 }
 
 module.exports = devolverString;

@@ -1,9 +1,8 @@
 function dePalabrasAFrase(palabras) {
   // El argumento "palabras" es un arreglo de strings.
-  // Retorna un string donde todas las palabras estén concatenadas,
-  // con un espacio entre cada palabra.
-  // Ejemplo: ['Hello', 'world!'] -> 'Hello world!'.
-  // Tu código:
+  // Retorna un string donde todas las palabras esten concatenadas.
+  // Tu codigo:
+  return palabras.join(' ');
 }
 
 module.exports = dePalabrasAFrase;
