@@ -1,10 +1,8 @@
 function multiplica(x, y) {
-  // La función recibe dos argumentos llamados "x" e "y" que son números.
+  // La funcion recibe dos argumentos llamados "x" e "y" que son numeros.
   // Retorna el resultado de la multiplicacion de estos argumentos.
-  // Por ejemplo: 
-  // 10, 5 ---> 50
-  // 5, 5 ---> 25
-  // Tu código:
+  // Tu codigo:
+  return x * y;
 }
 
 module.exports = multiplica;
